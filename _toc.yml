@@ -6,4 +6,5 @@ root: 00_intro
 chapters:
 - file: 01_linea_comandos_intro
 - file: 02_explorando_directorios
+- file: 03_archivos
 - file: Glosario

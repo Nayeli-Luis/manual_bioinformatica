@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Glosario" href="Glosario.html" />
+    <link rel="next" title="Archivos, permisos y usuarios" href="03_archivos.html" />
     <link rel="prev" title="Introducción a linea de comandos" href="01_linea_comandos_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -98,6 +98,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Explorando directorios desde la terminal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_archivos.html">
+   Archivos, permisos y usuarios
   </a>
  </li>
  <li class="toctree-l1">
@@ -187,6 +192,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rutas-absolutas-y-rutas-relativas">
+   Rutas absolutas y rutas relativas
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -204,6 +222,21 @@
 <li><p>Entender los comandos <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, <code class="docutils literal notranslate"><span class="pre">cd</span></code>, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">mkdir</span></code>.</p></li>
 </ul>
 </div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="tip admonition">
+<p class="admonition-title">Shortcuts</p>
+<p>Algunos shortcuts para hacer más fluído tu uso de la terminal:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tab</span></code>: Completa el nombre de un fichero o directorio existente.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">a</span></code>: Ir al principio de la línea.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">e</span></code>: Ir al final de la línea.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">l</span></code> o comando <code class="docutils literal notranslate"><span class="pre">clean</span></code>: Limpiar pantalla.</p></li>
+<li><p>Uso de flechas del teclado permite ver el historial de comandos recientes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">r</span></code>: Espera que des un patrón de búsqueda. Te regresa las líneas que has ejecutado que contengan ese patrón.</p></li>
+</ul>
+</div>
+</div>
 <p>Una vez que ya conoces los comandos básicos para usar en terminal, vamos a practicar un poco. Para este ejercicio utilizaremos una terminal virtual llamada <a href = "https://sandbox.cs50.io/">CS50 Sandbox </a>, al dar click te aparecerá la siguiente ventana:
 <br></p>
 <div class="figure align-default" id="ventana-sandbox">
@@ -213,15 +246,15 @@
 <br>
 Da click en crear para poder acceder a la terminal virtual.
 <br>
-<div class="warning admonition">
-<p class="admonition-title">Nota</p>
-<p>Para poder acceder debes tener una cuenta de <a href = "https://github.com/">GitHub</a>, sino la has creado, ahora es el momento perfecto.</p>
-</div>
+:::{admonition} Nota
+:class: warning
+Para poder acceder debes tener una cuenta de <a href = "https://github.com/">GitHub</a>, sino la has creado, ahora es el momento perfecto.
+:::
 <br>
 En seguida te aparecerá la siguiente interfaz:
 <br>
 <div class="figure align-default" id="interfaz">
-<a class="reference internal image-reference" href="_images/2.png"><img alt="_images/2.png" src="_images/2.png" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/2.png"><img alt="_images/2.png" src="_images/2.png" style="height: 450px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Interfaz de la terminal virtual Sandbox.</span><a class="headerlink" href="#interfaz" title="Permalink to this image">¶</a></p>
 </div>
 <br>
@@ -313,6 +346,30 @@ Imprime de nuevo la ruta para que te asegures:
 </pre></div>
 </div>
 <br>
+<div class="section" id="rutas-absolutas-y-rutas-relativas">
+<h2>Rutas absolutas y rutas relativas<a class="headerlink" href="#rutas-absolutas-y-rutas-relativas" title="Permalink to this headline">¶</a></h2>
+<p>Una <strong>ruta absoluta</strong> de un directorio nos indica todo el camino que hay que recorrer para llegar a él. Mientras que, una <strong>ruta relativa</strong> apunta a una referencia y luego indica el camino a partir de esa referencia. Imagina que invitas a un&#64; amig&#64; a tu casa, no es lo mismo darle instrucciones si el punto de partida es su casa; a darle instrucciones si el punto de partrida es desde la tienda más cercana a tu casa. Acá sucede lo mismo.</p>
+<br>
+<p>Considerando el ejercicio que hemos estado realizando, nuestro árbol de directorios se vería así:</p>
+<br>
+<div class="figure align-default" id="arbol-arbol-ejercicios">
+<a class="reference internal image-reference" href="_images/arbol_ejercicio.png"><img alt="_images/arbol_ejercicio.png" src="_images/arbol_ejercicio.png" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Representación gráfica del árbol de directorios para éste ejercicio.</span><a class="headerlink" href="#arbol-arbol-ejercicios" title="Permalink to this image">¶</a></p>
+</div>
+<br>
+<p>Si quisieramos acceder a ‘dir3’ desde la terminal y escribiendo su ruta absoluta, ésta sería:</p>
+<br>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /root/sandbox/mi_directorio/dir1/dir3
+</pre></div>
+</div>
+<br>
+<p>Sin embargo, si estuvieramos en ‘dir2’ y quisieramos acceder a ‘dir3’, estamos apuntando ahora a una referencia. Tendríamos primero que volver a ‘mi_directorio’ para luego ingresar a ‘dir1’ y finalmente a ‘dir3’, por tanto, la ruta relativa se vería así:</p>
+<br>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ../dir1/dir3
+</pre></div>
+</div>
+ <br>
+<p>Nota que no escribí ‘mi_directorio’, en linea de comandos <code class="docutils literal notranslate"><span class="pre">../</span></code> indica “volver a la carpeta superior”.</p>
 <div class="important admonition">
 <p class="admonition-title">Lo que debes saber:</p>
 <p>Con este pequeño tutorial debes saber:</p>
@@ -323,6 +380,7 @@ Imprime de nuevo la ruta para que te asegures:
 <li><p>El comando <code class="docutils literal notranslate"><span class="pre">ls</span></code> sirve par enlistar los elementos que hay en un directorio.</p></li>
 <li><p>El comando <code class="docutils literal notranslate"><span class="pre">pwd</span></code> sirve para imprimir la ruta del directorio.</p></li>
 </ul>
+</div>
 </div>
 </div>
 
@@ -352,7 +410,7 @@ Imprime de nuevo la ruta para que te asegures:
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="01_linea_comandos_intro.html" title="previous page">Introducción a linea de comandos</a>
-    <a class='right-next' id="next-link" href="Glosario.html" title="next page">Glosario</a>
+    <a class='right-next' id="next-link" href="03_archivos.html" title="next page">Archivos, permisos y usuarios</a>
 
         </div>
         

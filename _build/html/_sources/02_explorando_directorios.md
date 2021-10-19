@@ -6,6 +6,20 @@
 * Entender los comandos `pwd`, `cd`, `ls`, `mkdir`.
 :::
 
+::::{margin}
+:::{admonition} Shortcuts
+:class: tip
+Algunos shortcuts para hacer más fluído tu uso de la terminal:
+* `tab`: Completa el nombre de un fichero o directorio existente.
+* `Ctrl + a`: Ir al principio de la línea.
+* `Ctrl + e`: Ir al final de la línea.
+* `Ctrl + l` o comando `clean`: Limpiar pantalla.
+* Uso de flechas del teclado permite ver el historial de comandos recientes.
+* `Ctrl + r`: Espera que des un patrón de búsqueda. Te regresa las líneas que has ejecutado que contengan ese patrón. 
+
+:::
+::::
+
 Una vez que ya conoces los comandos básicos para usar en terminal, vamos a practicar un poco. Para este ejercicio utilizaremos una terminal virtual llamada <a href = "https://sandbox.cs50.io/">CS50 Sandbox </a>, al dar click te aparecerá la siguiente ventana:
 <br>
 
@@ -21,7 +35,6 @@ Ventana de la terminal virtual Sandbox
 Da click en crear para poder acceder a la terminal virtual.
 
 <br>
-
 :::{admonition} Nota
 :class: warning
 Para poder acceder debes tener una cuenta de <a href = "https://github.com/">GitHub</a>, sino la has creado, ahora es el momento perfecto.
@@ -34,7 +47,7 @@ En seguida te aparecerá la siguiente interfaz:
 
 ```{figure} images/03_explorando_direc/2.png
 ---
-height: 400px
+height: 450px
 name: interfaz
 ---
 Interfaz de la terminal virtual Sandbox.
@@ -166,6 +179,47 @@ Imprime de nuevo la ruta para que te asegures:
 /root/sandbox
 ```
 <br>
+
+## Rutas absolutas y rutas relativas
+
+Una **ruta absoluta** de un directorio nos indica todo el camino que hay que recorrer para llegar a él. Mientras que, una **ruta relativa** apunta a una referencia y luego indica el camino a partir de esa referencia. Imagina que invitas a un@ amig@ a tu casa, no es lo mismo darle instrucciones si el punto de partida es su casa; a darle instrucciones si el punto de partrida es desde la tienda más cercana a tu casa. Acá sucede lo mismo.
+
+<br>
+
+Considerando el ejercicio que hemos estado realizando, nuestro árbol de directorios se vería así:
+
+<br>
+
+```{figure} images/03_explorando_direc/arbol_ejercicio.png
+---
+height: 400px
+name: arbol arbol_ejercicios
+---
+Representación gráfica del árbol de directorios para éste ejercicio.
+```
+<br>
+
+Si quisieramos acceder a 'dir3' desde la terminal y escribiendo su ruta absoluta, ésta sería:
+
+<br>
+
+```{code-block} bash
+cd /root/sandbox/mi_directorio/dir1/dir3
+```
+
+<br>
+
+Sin embargo, si estuvieramos en 'dir2' y quisieramos acceder a 'dir3', estamos apuntando ahora a una referencia. Tendríamos primero que volver a 'mi_directorio' para luego ingresar a 'dir1' y finalmente a 'dir3', por tanto, la ruta relativa se vería así:
+
+<br>
+
+```{code-block} bash
+cd ../dir1/dir3
+```
+ <br>
+
+Nota que no escribí 'mi_directorio', en linea de comandos `../` indica "volver a la carpeta superior".
+
 
 :::{admonition} Lo que debes saber:
 :class: important
