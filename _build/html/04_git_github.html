@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Glosario" href="Glosario.html" />
+    <link rel="next" title="Datos, variables y operadores" href="05_datos_operadores.html" />
     <link rel="prev" title="Archivos, permisos y usuarios" href="03_archivos.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -89,7 +89,12 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<p class="caption">
+ <span class="caption-text">
+  Introducción a Bash
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="01_linea_comandos_intro.html">
    Introducción a linea de comandos
@@ -105,11 +110,59 @@
    Archivos, permisos y usuarios
   </a>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Git y GitHub
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Git y Github
   </a>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Fundamentos de programación
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_datos_operadores.html">
+   Datos, variables y operadores
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_algoritmos.html">
+   Algoritmos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07_control_flujo.html">
+   Control de flujo de un algortimo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Prácticas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="p1_git_github.html">
+   Práctica 1. Git y GitHub
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Glosario
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Glosario.html">
    Glosario
@@ -329,6 +382,13 @@
 </div>
 <div class="section" id="primeros-pasos-con-git-y-github">
 <h2>Primeros pasos con Git y GitHub<a class="headerlink" href="#primeros-pasos-con-git-y-github" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition-buscador-de-comandos admonition">
+<p class="admonition-title">Buscador de comandos</p>
+<p><a href = "https://git-scm.com/docs">Aquí</a> la documentación de Git, para que busques y revises los comandos que necesites.</p>
+</div>
+</div>
 <p>Lo que vamos a aprender a continuación es a manejar repositorios desde nuestra comput
 Primero, para poder utilizar Git y Github desde tu computadora debes crear un token de acceso personal, el cual utilizarás como contraseña en la línea de comandos, para ellos debes seguir <a href = "https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">este tutorial</a>. Guarda tu token en un lugar seguro, no lo compartas.</p>
 <p>Ahora, vamos a iniciar sesión en Github y a crear un nuevo repositorio.</p>
@@ -361,7 +421,12 @@ git clone https://github.com/Nayeli-Luis/pruba_repositorio.git
 <br>
 <p>Después de que hayas ingresado tus datos te debe aparecer una carpeta con el nombre de tu repositorio, puedes comporbarlo haciendo un listado con <code class="docutils literal notranslate"><span class="pre">ls</span></code>. Lo que haremos ahora es generar un archivo de texto.  Una vez que tu archivo esté generado, editalo escribiendo tu nombre, tu correo y tu película favorita. Sino recuerdas como hacer algo de esto, te sugiero que revises el capítulo anterior.</p>
 <br>
-<p>Ahra subiremos nuestro archivo con <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>, paa subir todo lo que tenemos en nuestro repositorio se agrega <code class="docutils literal notranslate"><span class="pre">./*</span></code>, entonces escribimos en terminal:</p>
+También puedes creear una carpeta en tu computadora y generar un repositorio vacío escribiendo:
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git init
+</pre></div>
+</div>
+<br>
+<p>Ahora subiremos nuestro archivo con <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>, paa subir todo lo que tenemos en nuestro repositorio se agrega <code class="docutils literal notranslate"><span class="pre">./*</span></code>, entonces escribimos en terminal:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add ./*
 </pre></div>
 </div>
@@ -408,6 +473,8 @@ vamos a guardar ese archivo en nuestro repositorio local con <code class="docuti
 <p class="admonition-title">Resumen de comandos de Git</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code>
 : Clonar un repositorio virtual en computadora local.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code>
+: Crea un repositorio vació en la carpeta actual (directorio de trabajo).</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>
 : Agregar archivo al repositorio</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>
@@ -452,7 +519,7 @@ vamos a guardar ese archivo en nuestro repositorio local con <code class="docuti
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="03_archivos.html" title="previous page">Archivos, permisos y usuarios</a>
-    <a class='right-next' id="next-link" href="Glosario.html" title="next page">Glosario</a>
+    <a class='right-next' id="next-link" href="05_datos_operadores.html" title="next page">Datos, variables y operadores</a>
 
         </div>
         

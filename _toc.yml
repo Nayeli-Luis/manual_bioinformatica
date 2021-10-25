@@ -3,9 +3,23 @@
 
 format: jb-book
 root: 00_intro
-chapters:
-- file: 01_linea_comandos_intro
-- file: 02_explorando_directorios
-- file: 03_archivos
-- file: 04_git_github
-- file: Glosario
+parts:
+  - caption: Introducción a Bash
+    chapters:
+    - file: 01_linea_comandos_intro
+    - file: 02_explorando_directorios
+    - file: 03_archivos
+  - caption: Git y GitHub
+    chapters:
+    - file: 04_git_github
+  - caption: Fundamentos de programación
+    chapters:
+    - file: 05_datos_operadores
+    - file: 06_algoritmos
+    - file: 07_control_flujo
+  - caption: Prácticas
+    chapters:
+    - file: p1_git_github
+  - caption: Glosario
+    chapters:
+    - file: Glosario

@@ -106,6 +106,13 @@ En macOS, se debe tener instalado <a href = "https://brew.sh/">Homebrew</a> o <a
 
 ## Primeros pasos con Git y GitHub
 
+
+::::{margin}
+:::{admonition} Buscador de comandos
+<a href = "https://git-scm.com/docs">Aquí</a> la documentación de Git, para que busques y revises los comandos que necesites.
+:::
+::::
+
 Lo que vamos a aprender a continuación es a manejar repositorios desde nuestra comput
 Primero, para poder utilizar Git y Github desde tu computadora debes crear un token de acceso personal, el cual utilizarás como contraseña en la línea de comandos, para ellos debes seguir <a href = "https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">este tutorial</a>. Guarda tu token en un lugar seguro, no lo compartas.
 
@@ -162,8 +169,15 @@ Cuando hagas esto, te pedirá un usuario y tu contraseña. Tu usuario de Github 
 Después de que hayas ingresado tus datos te debe aparecer una carpeta con el nombre de tu repositorio, puedes comporbarlo haciendo un listado con `ls`. Lo que haremos ahora es generar un archivo de texto.  Una vez que tu archivo esté generado, editalo escribiendo tu nombre, tu correo y tu película favorita. Sino recuerdas como hacer algo de esto, te sugiero que revises el capítulo anterior.
 
 <br>
+También puedes creear una carpeta en tu computadora y generar un repositorio vacío escribiendo:
 
- Ahra subiremos nuestro archivo con `git add`, paa subir todo lo que tenemos en nuestro repositorio se agrega `./*`, entonces escribimos en terminal:
+```{code-block} bash
+git init
+```
+
+<br>
+
+Ahora subiremos nuestro archivo con `git add`, paa subir todo lo que tenemos en nuestro repositorio se agrega `./*`, entonces escribimos en terminal:
 
  ```{code-block} bash
  git add ./*
@@ -238,6 +252,9 @@ git status
 :class: tip
 `git clone`
 : Clonar un repositorio virtual en computadora local.
+
+`git init`
+: Crea un repositorio vació en la carpeta actual (directorio de trabajo).
 
 `git add`
 : Agregar archivo al repositorio
