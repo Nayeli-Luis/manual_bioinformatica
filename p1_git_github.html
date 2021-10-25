@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introducción a linea de comandos &#8212; Genómica computacional. Manual de bioinformática.</title>
+    <title>Práctica 1. Git y GitHub &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Explorando directorios desde la terminal" href="02_explorando_directorios.html" />
-    <link rel="prev" title="Presentación" href="00_intro.html" />
+    <link rel="next" title="Glosario" href="Glosario.html" />
+    <link rel="prev" title="Control de flujo de un algortimo" href="07_control_flujo.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -94,9 +94,9 @@
   Introducción a Bash
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_linea_comandos_intro.html">
    Introducción a linea de comandos
   </a>
  </li>
@@ -150,9 +150,9 @@
   Prácticas
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="p1_git_github.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Práctica 1. Git y GitHub
   </a>
  </li>
@@ -209,7 +209,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/01_linea_comandos_intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/p1_git_github.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -229,7 +229,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F01_linea_comandos_intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fp1_git_github.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -256,28 +256,18 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#video">
-   Video
+  <a class="reference internal nav-link" href="#parte-1">
+   Parte 1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#linux-y-unix">
-   Linux y Unix
+  <a class="reference internal nav-link" href="#parte-2">
+   Parte 2
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#la-terminal">
-   La terminal
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#linea-de-comandos">
-   Linea de comandos
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#comandos-basicos-para-el-manejo-de-archivos-y-directorios">
-   Comandos básicos para el manejo de archivos y directorios
+  <a class="reference internal nav-link" href="#parte-3">
+   Parte 3
   </a>
  </li>
 </ul>
@@ -291,81 +281,48 @@
         
               <div>
                 
-  <div class="section" id="introduccion-a-linea-de-comandos">
-<h1>Introducción a linea de comandos<a class="headerlink" href="#introduccion-a-linea-de-comandos" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="practica-1-git-y-github">
+<h1>Práctica 1. Git y GitHub<a class="headerlink" href="#practica-1-git-y-github" title="Permalink to this headline">¶</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Objetivo</p>
-<p>Comprender la diferencia entre Unix y Linux
-Conocer los comandos básicos de Bash para manejar archivos y directorios desde la terminal.</p>
+<ul class="simple">
+<li><p>Aplicar lo que aprendido en los apartados de “Introducción a Bash” y “Git y GitHub”.</p></li>
+</ul>
 </div>
-<div class="section" id="video">
-<h2>Video<a class="headerlink" href="#video" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>En fabricación…</p>
+<div class="section" id="parte-1">
+<h2>Parte 1<a class="headerlink" href="#parte-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Crear un repositorio público desde GitHub con el nombre: “GenomicaFC_2021-2”</p></li>
+<li><p>Vincular el repositorio con git en su computadora.</p></li>
+</ul>
 </div>
+<div class="section" id="parte-2">
+<h2>Parte 2<a class="headerlink" href="#parte-2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Crear un archivo en Markdown desde su computadora que contenga la biografía de una mujer en la Genómica Computacional, Bioinformática o Ciencias de la Computación. La biografía no se puede repetir y deberá cumplir ciertos criterios*. El archivo .md deberá ser nombrado con el nombre y apellido(s) de la científica (Ej. <code class="docutils literal notranslate"><span class="pre">MargaretDayhoff.md</span></code>). Para ver la sintaxis de Markdown da click <a href = "https://www.markdownguide.org/cheat-sheet/">aquí</a>.</p>
+<ul>
+<li><p>La biografía debe contener:</p>
+<ol class="simple">
+<li><p>Nombre de la científica.</p></li>
+<li><p>Una fotografía -nombrar el archivo ej. img_mdayhoff.png-.</p></li>
+<li><p>Semblanza breve.</p></li>
+<li><p>Lista de aportaciones.</p></li>
+<li><p>Referencias</p></li>
+<li><p>Datos personales: tu nombre, semestre y fecha.</p></li>
+<li><p>Más imágenes son opcionales.</p></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>Subir los cambios de la biografía a su repositorio “GenomicaFC_2021-2”.</p></li>
+</ul>
 </div>
-<div class="section" id="linux-y-unix">
-<h2>Linux y Unix<a class="headerlink" href="#linux-y-unix" title="Permalink to this headline">¶</a></h2>
-<p>Linux es un sistema operativo (SO) como Microsoft Windows o Mac OS. Un SO es un programa de computadora que administra cómo ésta se conecta al hardware (pantalla, teclado, etc.), también administra sus archivos y le permite ejecutar aplicaciones de software. Un SO generalmente vendrá como una interfaz gráfica de usuario (GUI), la interfaz gráfica es la parte con la que interactúa el usuario (o sea tu).</p>
-<br>
-<p>Ahora un poco de historia… El término Linux se refiere a una familia de sistemas operativos de código abierto similares a Unix basados en el kernel de Linux, el cual fue desarrollado por Linus Torvalds y lanzado por primera vez en 1991. Unix en sí se refiere a una familia de SO multitarea y multiusuario todo derivado del AT&amp;T Unix original que se desarrolló a fines de la década de 1970. En la práctica, aunque Unix se refiere estrictamente a un sistema operativo comercial y Linux se refiere a un sistema operativo de código abierto disponible gratuitamente, las dos palabras tienden a usarse indistintamente.</p>
-</div>
-<div class="section" id="la-terminal">
-<h2>La terminal<a class="headerlink" href="#la-terminal" title="Permalink to this headline">¶</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Aquí un enlace para una terminal online
-<br>
-<a href = "https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html"> Terminus </a></p>
-</div>
-</div>
-<p>La terminal es un software que permite la interacción de usuario con la computadora escribiendo simples comandos de texto. Todas las computadoras con SO Linux contienen una terminal, Mac OS también tienen su equivalente, sin embargo, las versiones actuales de Windows no.</p>
-</div>
-<div class="section" id="linea-de-comandos">
-<h2>Linea de comandos<a class="headerlink" href="#linea-de-comandos" title="Permalink to this headline">¶</a></h2>
-<p>La línea de comando es la línea actual dentro del terminal que se puede usar para ingresar comandos de texto. Cada comando se ejecuta a través de un shell, un programa que envía comandos a la computadora para que los interprete. Los shells comunes incluyen <code class="docutils literal notranslate"><span class="pre">bash</span></code>, <code class="docutils literal notranslate"><span class="pre">zsh</span></code>, <code class="docutils literal notranslate"><span class="pre">tcsh</span> <span class="pre">/</span> <span class="pre">csh</span></code> y <code class="docutils literal notranslate"><span class="pre">ksh</span></code>. En este curso, nos centraremos en el shell bash. Los comandos básicos tienden a ser los mismos en todos los shells, pero algunos de los comandos más avanzados pueden variar un poco en sintaxis entre ellos.</p>
-</div>
-<div class="section" id="comandos-basicos-para-el-manejo-de-archivos-y-directorios">
-<h2>Comandos básicos para el manejo de archivos y directorios<a class="headerlink" href="#comandos-basicos-para-el-manejo-de-archivos-y-directorios" title="Permalink to this headline">¶</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Fichero = Archivo
-<br>
-Directorio = Carpeta</p>
-</div>
-</div>
-<p>Es importante mencionar que los directorios en una carpeta están jerarquizados (ver figura), es decir, que un directorio puede estar dentro de otro y así sucesivamente hasta tener uno principal. Además, cada directorio y/o fichero tienen un ruta que indica el sitio donde se encuentran. Tomar en cuenta lo anterior permitirá que no te pierdas entre el laberinto de directorios y ficheros que puedas tener en tu computadora.</p>
-<br>
-<div class="figure align-default" id="arbol-de-directorios">
-<a class="reference internal image-reference" href="_images/directory_tree.png"><img alt="_images/directory_tree.png" src="_images/directory_tree.png" style="height: 350px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Árbol de directorios</span><a class="headerlink" href="#arbol-de-directorios" title="Permalink to this image">¶</a></p>
-</div>
-<br>
-<p>Utilizar la terminal y manejar archivos y directorios a través de comandos es importante porque es más eficiente y al trabajar con grandes datos biológicos, los recursos de hardware de una computadora personal no son suficientes. En cambio, se utiliza un servidor, y los servidores en general no tienen interfaz gráfica, por lo que no tenemos más opción.</p>
-<br>
-<p>A continuación se presentan algunos comandos básicos:</p>
-<br>
-<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>
-: “print working directory”: Indica la ruta (path) en la que se encuentra tu archivo.</p>
-<p><code class="docutils literal notranslate"><span class="pre">cd</span></code>
-: “change directory”: se utiliza para cambiar de directorio. Ejemplo de sintaxis: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">nombre_directorio</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">ls</span></code>
-: “list”: Enlista los archivos que hay en un directorio.</p>
-<p><code class="docutils literal notranslate"><span class="pre">rm</span></code>
-: “remove”: Elimina un fichero o un directorio. Ejemplo de sintaxis: rm <code class="docutils literal notranslate"><span class="pre">nombre_fichero/directorio</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">mv</span></code>
-: “move”: Mueve un fichero o directorio a otra ruta. Ejemplo de sintaxis: <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">archivo.txt</span> <span class="pre">./nueva_carpeta</span></code>. También se puede cambiar el nombre de un fichero o directorio, ejemplo: <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">nombre_feo.txt</span> <span class="pre">nombre_cool.txt</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>
-: “make directory”: Crea un directorio nuevo.</p>
-<p><code class="docutils literal notranslate"><span class="pre">man</span></code>
-: “manual”: Muestra el manual de uso de un comando en particular.</p>
-<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>
-: “copy”: Copia un archivo a un directorio. Ejemplo: <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">archivo.txt</span> <span class="pre">/mi/ruta/directorio</span></code>.</p>
+<div class="section" id="parte-3">
+<h2>Parte 3<a class="headerlink" href="#parte-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hacer un fork del <a href = "https://github.com/solnavss/Genomica_Computacional">repositorio del curso</a> y clonarlo en su computadora. Desde su computadora, añadir una copia de la biografía en práctica01 &gt; biografías</p></li>
+<li><p>Hacer un pull request al repositorio del curso.</p></li>
+</ul>
 </div>
 </div>
 
@@ -394,8 +351,8 @@ Directorio = Carpeta</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="00_intro.html" title="previous page">Presentación</a>
-    <a class='right-next' id="next-link" href="02_explorando_directorios.html" title="next page">Explorando directorios desde la terminal</a>
+    <a class='left-prev' id="prev-link" href="07_control_flujo.html" title="previous page">Control de flujo de un algortimo</a>
+    <a class='right-next' id="next-link" href="Glosario.html" title="next page">Glosario</a>
 
         </div>
         
