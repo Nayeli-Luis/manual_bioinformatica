@@ -29,6 +29,7 @@ parts:
   - caption: Prácticas
     chapters:
     - file: p1_git_github
+    - file: p2_intro_python
   - caption: Glosario
     chapters:
     - file: Glosario

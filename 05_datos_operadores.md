@@ -4,7 +4,7 @@
 Un dato es una representación simbólica (un número, letra, grafo, lo que quieras) de una característica de un elemento u objeto. Los datos pueden clasificarse en función de su composición, si son números, si tienen caracteres alfanuméricos, etc.
 
 ### Datos alfanuméricos
-Estos datos se componen de la combinación de todos los caracteres conocidos, letras, dígitos, caracteres especiales (como ·, % ,/, _, etc.).  Estos se dividen en:
+Estos datos se componen de la combinación de todos los caracteres conocidos, letras, dígitos, caracteres especiales (como ·, % ,/, etc.).  Estos se dividen en:
 
 * Catacter: Literalmente, son los datos que solo tienen un caracter. Ejemplo: "b", "0", "1".
 * Cadena o *string*: Son los datos compuestos por un conjunto de varios caracteres. Ejemplo: "Nayeli Luis".
