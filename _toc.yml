@@ -17,6 +17,15 @@ parts:
     - file: 05_datos_operadores
     - file: 06_algoritmos
     - file: 07_control_flujo
+  - caption: Introducción a Python
+    chapters:
+    - file: 08_python_intro
+    - file: 09_sintaxis_basica
+  - caption: Introducción al análisis de secuencias de DNA
+    chapters:
+    - file: 10_intro_analisis_datos_biol
+    - file: 11_data_sources
+    - file: 12_formatos
   - caption: Prácticas
     chapters:
     - file: p1_git_github

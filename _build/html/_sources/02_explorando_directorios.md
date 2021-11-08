@@ -16,7 +16,6 @@ Algunos shortcuts para hacer más fluído tu uso de la terminal:
 * `Ctrl + l` o comando `clean`: Limpiar pantalla.
 * Uso de flechas del teclado permite ver el historial de comandos recientes.
 * `Ctrl + r`: Espera que des un patrón de búsqueda. Te regresa las líneas que has ejecutado que contengan ese patrón. 
-
 :::
 ::::
 
@@ -35,6 +34,7 @@ Ventana de la terminal virtual Sandbox
 Da click en crear para poder acceder a la terminal virtual.
 
 <br>
+
 :::{admonition} Nota
 :class: warning
 Para poder acceder debes tener una cuenta de <a href = "https://github.com/">GitHub</a>, sino la has creado, ahora es el momento perfecto.

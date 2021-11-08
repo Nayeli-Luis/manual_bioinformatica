@@ -1,4 +1,6 @@
-#  Control de flujo de un algortimo
+#  Control de flujo de un algoritmo
+
+<!--Falta varias cosas de control de flujo--->
 
 :::{admonition} Objetivo
 :class: tip

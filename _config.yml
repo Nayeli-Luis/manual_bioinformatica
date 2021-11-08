@@ -35,3 +35,7 @@ parse:
   myst_enable_extensions:
     - html_image
     - colon_fence
+    - html_admonition
+    - deflist
+
+notebook_interface: "notebook" 
