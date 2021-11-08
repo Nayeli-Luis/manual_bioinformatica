@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introducción a linea de comandos &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -89,7 +90,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -111,7 +112,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -123,7 +124,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -141,11 +142,50 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="07_control_flujo.html">
-   Control de flujo de un algortimo
+   Control de flujo de un algoritmo
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción a Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_python_intro.html">
+   Introducción a Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_sintaxis_basica.html">
+   Sintaxis básica
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción al análisis de secuencias de DNA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_intro_analisis_datos_biol.html">
+   Introducción al análisis de datos biológicos con herramientas bioinformáticas.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_data_sources.html">
+   ¿De dónde obtenemos datos biológicos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12_formatos.html">
+   Formatos de archivos
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
  <span class="caption-text">
   Prácticas
  </span>
@@ -157,7 +197,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Glosario
  </span>
@@ -291,29 +331,29 @@
         
               <div>
                 
-  <div class="section" id="introduccion-a-linea-de-comandos">
+  <section id="introduccion-a-linea-de-comandos">
 <h1>Introducción a linea de comandos<a class="headerlink" href="#introduccion-a-linea-de-comandos" title="Permalink to this headline">¶</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Objetivo</p>
 <p>Comprender la diferencia entre Unix y Linux
 Conocer los comandos básicos de Bash para manejar archivos y directorios desde la terminal.</p>
 </div>
-<div class="section" id="video">
+<section id="video">
 <h2>Video<a class="headerlink" href="#video" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>En fabricación…</p>
 </div>
-</div>
-<div class="section" id="linux-y-unix">
+</section>
+<section id="linux-y-unix">
 <h2>Linux y Unix<a class="headerlink" href="#linux-y-unix" title="Permalink to this headline">¶</a></h2>
 <p>Linux es un sistema operativo (SO) como Microsoft Windows o Mac OS. Un SO es un programa de computadora que administra cómo ésta se conecta al hardware (pantalla, teclado, etc.), también administra sus archivos y le permite ejecutar aplicaciones de software. Un SO generalmente vendrá como una interfaz gráfica de usuario (GUI), la interfaz gráfica es la parte con la que interactúa el usuario (o sea tu).</p>
 <br>
 <p>Ahora un poco de historia… El término Linux se refiere a una familia de sistemas operativos de código abierto similares a Unix basados en el kernel de Linux, el cual fue desarrollado por Linus Torvalds y lanzado por primera vez en 1991. Unix en sí se refiere a una familia de SO multitarea y multiusuario todo derivado del AT&amp;T Unix original que se desarrolló a fines de la década de 1970. En la práctica, aunque Unix se refiere estrictamente a un sistema operativo comercial y Linux se refiere a un sistema operativo de código abierto disponible gratuitamente, las dos palabras tienden a usarse indistintamente.</p>
-</div>
-<div class="section" id="la-terminal">
+</section>
+<section id="la-terminal">
 <h2>La terminal<a class="headerlink" href="#la-terminal" title="Permalink to this headline">¶</a></h2>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -321,16 +361,16 @@ Conocer los comandos básicos de Bash para manejar archivos y directorios desde 
 <br>
 <a href = "https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html"> Terminus </a></p>
 </div>
-</div>
+</aside>
 <p>La terminal es un software que permite la interacción de usuario con la computadora escribiendo simples comandos de texto. Todas las computadoras con SO Linux contienen una terminal, Mac OS también tienen su equivalente, sin embargo, las versiones actuales de Windows no.</p>
-</div>
-<div class="section" id="linea-de-comandos">
+</section>
+<section id="linea-de-comandos">
 <h2>Linea de comandos<a class="headerlink" href="#linea-de-comandos" title="Permalink to this headline">¶</a></h2>
 <p>La línea de comando es la línea actual dentro del terminal que se puede usar para ingresar comandos de texto. Cada comando se ejecuta a través de un shell, un programa que envía comandos a la computadora para que los interprete. Los shells comunes incluyen <code class="docutils literal notranslate"><span class="pre">bash</span></code>, <code class="docutils literal notranslate"><span class="pre">zsh</span></code>, <code class="docutils literal notranslate"><span class="pre">tcsh</span> <span class="pre">/</span> <span class="pre">csh</span></code> y <code class="docutils literal notranslate"><span class="pre">ksh</span></code>. En este curso, nos centraremos en el shell bash. Los comandos básicos tienden a ser los mismos en todos los shells, pero algunos de los comandos más avanzados pueden variar un poco en sintaxis entre ellos.</p>
-</div>
-<div class="section" id="comandos-basicos-para-el-manejo-de-archivos-y-directorios">
+</section>
+<section id="comandos-basicos-para-el-manejo-de-archivos-y-directorios">
 <h2>Comandos básicos para el manejo de archivos y directorios<a class="headerlink" href="#comandos-basicos-para-el-manejo-de-archivos-y-directorios" title="Permalink to this headline">¶</a></h2>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -338,36 +378,40 @@ Conocer los comandos básicos de Bash para manejar archivos y directorios desde 
 <br>
 Directorio = Carpeta</p>
 </div>
-</div>
+</aside>
 <p>Es importante mencionar que los directorios en una carpeta están jerarquizados (ver figura), es decir, que un directorio puede estar dentro de otro y así sucesivamente hasta tener uno principal. Además, cada directorio y/o fichero tienen un ruta que indica el sitio donde se encuentran. Tomar en cuenta lo anterior permitirá que no te pierdas entre el laberinto de directorios y ficheros que puedas tener en tu computadora.</p>
 <br>
-<div class="figure align-default" id="arbol-de-directorios">
+<figure class="align-default" id="arbol-de-directorios">
 <a class="reference internal image-reference" href="_images/directory_tree.png"><img alt="_images/directory_tree.png" src="_images/directory_tree.png" style="height: 350px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Árbol de directorios</span><a class="headerlink" href="#arbol-de-directorios" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Árbol de directorios</span><a class="headerlink" href="#arbol-de-directorios" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <br>
 <p>Utilizar la terminal y manejar archivos y directorios a través de comandos es importante porque es más eficiente y al trabajar con grandes datos biológicos, los recursos de hardware de una computadora personal no son suficientes. En cambio, se utiliza un servidor, y los servidores en general no tienen interfaz gráfica, por lo que no tenemos más opción.</p>
 <br>
 <p>A continuación se presentan algunos comandos básicos:</p>
 <br>
-<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>
-: “print working directory”: Indica la ruta (path) en la que se encuentra tu archivo.</p>
-<p><code class="docutils literal notranslate"><span class="pre">cd</span></code>
-: “change directory”: se utiliza para cambiar de directorio. Ejemplo de sintaxis: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">nombre_directorio</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">ls</span></code>
-: “list”: Enlista los archivos que hay en un directorio.</p>
-<p><code class="docutils literal notranslate"><span class="pre">rm</span></code>
-: “remove”: Elimina un fichero o un directorio. Ejemplo de sintaxis: rm <code class="docutils literal notranslate"><span class="pre">nombre_fichero/directorio</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">mv</span></code>
-: “move”: Mueve un fichero o directorio a otra ruta. Ejemplo de sintaxis: <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">archivo.txt</span> <span class="pre">./nueva_carpeta</span></code>. También se puede cambiar el nombre de un fichero o directorio, ejemplo: <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">nombre_feo.txt</span> <span class="pre">nombre_cool.txt</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>
-: “make directory”: Crea un directorio nuevo.</p>
-<p><code class="docutils literal notranslate"><span class="pre">man</span></code>
-: “manual”: Muestra el manual de uso de un comando en particular.</p>
-<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>
-: “copy”: Copia un archivo a un directorio. Ejemplo: <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">archivo.txt</span> <span class="pre">/mi/ruta/directorio</span></code>.</p>
-</div>
-</div>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">pwd</span></code></dt><dd><p>“print working directory”: Indica la ruta (path) en la que se encuentra tu archivo.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">cd</span></code></dt><dd><p>“change directory”: se utiliza para cambiar de directorio. Ejemplo de sintaxis: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">nombre_directorio</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ls</span></code></dt><dd><p>“list”: Enlista los archivos que hay en un directorio.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">rm</span></code></dt><dd><p>“remove”: Elimina un fichero o un directorio. Ejemplo de sintaxis: rm <code class="docutils literal notranslate"><span class="pre">nombre_fichero/directorio</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">mv</span></code></dt><dd><p>“move”: Mueve un fichero o directorio a otra ruta. Ejemplo de sintaxis: <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">archivo.txt</span> <span class="pre">./nueva_carpeta</span></code>. También se puede cambiar el nombre de un fichero o directorio, ejemplo: <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">nombre_feo.txt</span> <span class="pre">nombre_cool.txt</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></dt><dd><p>“make directory”: Crea un directorio nuevo.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">man</span></code></dt><dd><p>“manual”: Muestra el manual de uso de un comando en particular.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">cp</span></code></dt><dd><p>“copy”: Copia un archivo a un directorio. Ejemplo: <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">archivo.txt</span> <span class="pre">/mi/ruta/directorio</span></code>.</p>
+</dd>
+</dl>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

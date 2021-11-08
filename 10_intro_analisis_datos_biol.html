@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Glosario &#8212; Genómica computacional. Manual de bioinformática.</title>
+    <title>Introducción al análisis de datos biológicos con herramientas bioinformáticas. &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,7 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Práctica 1. Git y GitHub" href="p1_git_github.html" />
+    <link rel="next" title="¿De dónde obtenemos datos biológicos?" href="11_data_sources.html" />
+    <link rel="prev" title="Sintaxis básica" href="09_sintaxis_basica.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -167,9 +168,9 @@
   Introducción al análisis de secuencias de DNA
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="10_intro_analisis_datos_biol.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Introducción al análisis de datos biológicos con herramientas bioinformáticas.
   </a>
  </li>
@@ -201,9 +202,9 @@
   Glosario
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Glosario.html">
    Glosario
   </a>
  </li>
@@ -248,7 +249,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Glosario.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/10_intro_analisis_datos_biol.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -268,7 +269,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGlosario.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F10_intro_analisis_datos_biol.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -297,8 +298,29 @@
         
               <div>
                 
-  <section id="glosario">
-<h1>Glosario<a class="headerlink" href="#glosario" title="Permalink to this headline">¶</a></h1>
+  <section id="introduccion-al-analisis-de-datos-biologicos-con-herramientas-bioinformaticas">
+<h1>Introducción al análisis de datos biológicos con herramientas bioinformáticas.<a class="headerlink" href="#introduccion-al-analisis-de-datos-biologicos-con-herramientas-bioinformaticas" title="Permalink to this headline">¶</a></h1>
+<p>En general, el análisis de datos en bioinformática aparenta ser sencillo. Tenemos un conjuto de datos, los análizamos con alguna herramienta bioinformática y obtenemos una respuesta.</p>
+<br>
+<figure class="align-default" id="fake">
+<a class="reference internal image-reference" href="_images/fake_bioinformatics.png"><img alt="_images/fake_bioinformatics.png" src="_images/fake_bioinformatics.png" style="height: 100px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Como se cree que se llevan a cabo los análisis bioinformáticos.</span><a class="headerlink" href="#fake" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<br>
+<p>Lo que en realidad sucede es que cuando usamos una herramienta bioinformática, ésta transforma nuestros datos en otros. Y estos datos pueden reanalizarse con otra herramienta y así llegar a respuestas. De maneera que se vuelve más bien un loop de análisis de datos hasta que hallamos los que nos son útiles (como siempre… en función de los objetivos de nuestra investigación).</p>
+<br>
+<figure class="align-default" id="real">
+<a class="reference internal image-reference" href="_images/real-bioinformatics.png"><img alt="_images/real-bioinformatics.png" src="_images/real-bioinformatics.png" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Como en realidad se llevan a cabo los análisis bioinformáticos.</span><a class="headerlink" href="#real" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="caution admonition">
+<p class="admonition-title">Nota</p>
+<p>Ésta sección (<em>Introducción al análisis de secuencias de DNA</em>) es un resumen y traducción de una parte del libro <a href = "https://www.biostarhandbook.com/ming-tangs-guide-to-chip-seq-analysis.html"><em>The Biostar Handbook: Bioinformatics Data Analysys Guide</em></a>.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -326,7 +348,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="p1_git_github.html" title="previous page">Práctica 1. Git y GitHub</a>
+    <a class='left-prev' id="prev-link" href="09_sintaxis_basica.html" title="previous page">Sintaxis básica</a>
+    <a class='right-next' id="next-link" href="11_data_sources.html" title="next page">¿De dónde obtenemos datos biológicos?</a>
 
         </div>
         

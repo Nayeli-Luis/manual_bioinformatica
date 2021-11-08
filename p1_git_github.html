@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Práctica 1. Git y GitHub &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -52,7 +53,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Glosario" href="Glosario.html" />
-    <link rel="prev" title="Control de flujo de un algortimo" href="07_control_flujo.html" />
+    <link rel="prev" title="Formatos de archivos" href="12_formatos.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,7 +90,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -111,7 +112,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -123,7 +124,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -141,11 +142,50 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="07_control_flujo.html">
-   Control de flujo de un algortimo
+   Control de flujo de un algoritmo
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción a Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_python_intro.html">
+   Introducción a Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_sintaxis_basica.html">
+   Sintaxis básica
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción al análisis de secuencias de DNA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_intro_analisis_datos_biol.html">
+   Introducción al análisis de datos biológicos con herramientas bioinformáticas.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_data_sources.html">
+   ¿De dónde obtenemos datos biológicos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12_formatos.html">
+   Formatos de archivos
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
  <span class="caption-text">
   Prácticas
  </span>
@@ -157,7 +197,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Glosario
  </span>
@@ -281,7 +321,7 @@
         
               <div>
                 
-  <div class="section" id="practica-1-git-y-github">
+  <section id="practica-1-git-y-github">
 <h1>Práctica 1. Git y GitHub<a class="headerlink" href="#practica-1-git-y-github" title="Permalink to this headline">¶</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Objetivo</p>
@@ -289,14 +329,14 @@
 <li><p>Aplicar lo que aprendido en los apartados de “Introducción a Bash” y “Git y GitHub”.</p></li>
 </ul>
 </div>
-<div class="section" id="parte-1">
+<section id="parte-1">
 <h2>Parte 1<a class="headerlink" href="#parte-1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Crear un repositorio público desde GitHub con el nombre: “GenomicaFC_2021-2”</p></li>
 <li><p>Vincular el repositorio con git en su computadora.</p></li>
 </ul>
-</div>
-<div class="section" id="parte-2">
+</section>
+<section id="parte-2">
 <h2>Parte 2<a class="headerlink" href="#parte-2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Crear un archivo en Markdown desde su computadora que contenga la biografía de una mujer en la Genómica Computacional, Bioinformática o Ciencias de la Computación. La biografía no se puede repetir y deberá cumplir ciertos criterios*. El archivo .md deberá ser nombrado con el nombre y apellido(s) de la científica (Ej. <code class="docutils literal notranslate"><span class="pre">MargaretDayhoff.md</span></code>). Para ver la sintaxis de Markdown da click <a href = "https://www.markdownguide.org/cheat-sheet/">aquí</a>.</p>
@@ -316,15 +356,15 @@
 </li>
 <li><p>Subir los cambios de la biografía a su repositorio “GenomicaFC_2021-2”.</p></li>
 </ul>
-</div>
-<div class="section" id="parte-3">
+</section>
+<section id="parte-3">
 <h2>Parte 3<a class="headerlink" href="#parte-3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Hacer un fork del <a href = "https://github.com/solnavss/Genomica_Computacional">repositorio del curso</a> y clonarlo en su computadora. Desde su computadora, añadir una copia de la biografía en práctica01 &gt; biografías</p></li>
 <li><p>Hacer un pull request al repositorio del curso.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -351,7 +391,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="07_control_flujo.html" title="previous page">Control de flujo de un algortimo</a>
+    <a class='left-prev' id="prev-link" href="12_formatos.html" title="previous page">Formatos de archivos</a>
     <a class='right-next' id="next-link" href="Glosario.html" title="next page">Glosario</a>
 
         </div>

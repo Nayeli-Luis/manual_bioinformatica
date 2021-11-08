@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Archivos, permisos y usuarios &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -89,7 +90,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -111,7 +112,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -123,7 +124,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -141,11 +142,50 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="07_control_flujo.html">
-   Control de flujo de un algortimo
+   Control de flujo de un algoritmo
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción a Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_python_intro.html">
+   Introducción a Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_sintaxis_basica.html">
+   Sintaxis básica
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción al análisis de secuencias de DNA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_intro_analisis_datos_biol.html">
+   Introducción al análisis de datos biológicos con herramientas bioinformáticas.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_data_sources.html">
+   ¿De dónde obtenemos datos biológicos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12_formatos.html">
+   Formatos de archivos
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
  <span class="caption-text">
   Prácticas
  </span>
@@ -157,7 +197,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Glosario
  </span>
@@ -298,7 +338,7 @@
         
               <div>
                 
-  <div class="section" id="archivos-permisos-y-usuarios">
+  <section id="archivos-permisos-y-usuarios">
 <h1>Archivos, permisos y usuarios<a class="headerlink" href="#archivos-permisos-y-usuarios" title="Permalink to this headline">¶</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Objetivo</p>
@@ -313,7 +353,7 @@
 <p class="admonition-title">Nota</p>
 <p>Te recomiendo siempre hacer carpetas para cada prueba/ejercicio que vayas a realizar y conozcas la dirección exacta. En este caso, seguiré utilizando Sandbox, pero tu puedes utilizar la terminal de tu computadora o del ambiente Linux que hayas creado.</p>
 </div>
-<div class="section" id="crear-archivos">
+<section id="crear-archivos">
 <h2>Crear archivos<a class="headerlink" href="#crear-archivos" title="Permalink to this headline">¶</a></h2>
 <p>Primero, crearemos un directorio para guardar todo lo que hagamos en este apartado, ingresaremos en ese nuevo directorio, crearemos una carpeta dentro e imprimiremos la ruta:</p>
 <br>
@@ -364,8 +404,8 @@ mkdir genomica
 </div>
 <br>
 <p>Vuelve a listar para comprobar que el cambio se llevó a cabo.</p>
-</div>
-<div class="section" id="editar-archivos">
+</section>
+<section id="editar-archivos">
 <h2>Editar archivos<a class="headerlink" href="#editar-archivos" title="Permalink to this headline">¶</a></h2>
 <p>Para editar algún archivo desde la terminal se utilizan editores de texto. <strong>GNU nano</strong> es un editor de texto para entornos similares a Unix y otros sistemas operativos que utilizan una línea de comandos de terminal. Existen otros editores como <strong>vi</strong>, <strong>vim</strong>, <strong>Emacs</strong> y <strong>pico</strong>, en este caso usaremos <strong>Nano</strong>.</p>
 <p>Primero, vamos a crear un nuevo archivo con el siguiente ejemplo:</p>
@@ -375,20 +415,24 @@ mkdir genomica
 </div>
 <br>
 <p>Te abrirá una ventana de éste estilo:</p>
-<div class="figure align-default" id="ventana-nano">
+<figure class="align-default" id="ventana-nano">
 <a class="reference internal image-reference" href="_images/nano.png"><img alt="_images/nano.png" src="_images/nano.png" style="height: 450px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Ventana de Nano</span><a class="headerlink" href="#ventana-nano" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Ventana de Nano</span><a class="headerlink" href="#ventana-nano" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <br>
 Ahora ingresaremos una tabla donde separaremos cada valor por tabuladores `tab`. Es decir, nombre + tab + apellido + tab + correo.
-<div class="figure align-default" id="valores">
+<figure class="align-default" id="valores">
 <a class="reference internal image-reference" href="_images/01.png"><img alt="_images/01.png" src="_images/01.png" style="height: 450px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Valores ingresados en Nano</span><a class="headerlink" href="#valores" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Valores ingresados en Nano</span><a class="headerlink" href="#valores" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <br>
 <p>Ahora darás <code class="docutils literal notranslate"><span class="pre">control</span> <span class="pre">+</span> <span class="pre">x</span></code> para salir del editor nano, y te aparecerá un menú que te preguntará si deseas guardar lo que has modificado, le pondrás que si presionando la tecla <code class="docutils literal notranslate"><span class="pre">y</span></code> y luego <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
-</div>
-<div class="section" id="permisos-y-usuarios">
+</section>
+<section id="permisos-y-usuarios">
 <h2>Permisos y usuarios<a class="headerlink" href="#permisos-y-usuarios" title="Permalink to this headline">¶</a></h2>
 <p>Cada archivo o fichero tiene un propietario individual (por  lo general, el usuario que lo creó) y un amplio conjunto más amplio de propietarios que pertenece a un grupo Unix en particular. <strong>Un grupo Unix</strong> es un conjunto de usuarios que tienen permiso para acceder a un software o archivos particulares. Los grupos también se utilizan para garantizar que solo determinados usuarios puedan utilizar comnados que pueden afectar todo el sistema Linux. Para ver en qué grupos se encuentra.</p>
 <p>Primero veremos que usuario somos, para ello ingresaremos en terminal:</p>
@@ -397,10 +441,12 @@ Ahora ingresaremos una tabla donde separaremos cada valor por tabuladores `tab`.
 </div>
 <p>Este comando desplegará el nombre de tu usuario, si te encuentras realizando ésta práctica en <a href = "https://sandbox.cs50.io/">CS50 Sandbox </a>, tu usuario será ‘root’.</p>
 <p>Ahora para conocer los permisos de un archivo se escribe en terminal <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span></code>. Veamos los permisos de los archivos que creamos:</p>
-<div class="figure align-default" id="permisos">
+<figure class="align-default" id="permisos">
 <a class="reference internal image-reference" href="_images/permisos.png"><img alt="_images/permisos.png" src="_images/permisos.png" style="height: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Permisos</span><a class="headerlink" href="#permisos" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Permisos</span><a class="headerlink" href="#permisos" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Como se puede ver en la imagen (o en tu propia pantalla), aparece una especie de tabla con siete columnas.
 <br></p>
 <ul class="simple">
@@ -418,15 +464,17 @@ Ahora ingresaremos una tabla donde separaremos cada valor por tabuladores `tab`.
 <li><p>La sexta columna la fecha y hora de creación.</p></li>
 <li><p>La séptima columna el nombre del archivo.</p></li>
 </ul>
-<div class="section" id="cambiar-permisos">
+<section id="cambiar-permisos">
 <h3>Cambiar permisos<a class="headerlink" href="#cambiar-permisos" title="Permalink to this headline">¶</a></h3>
 <p>Para cambiar los permisos se utilizan los comandos <code class="docutils literal notranslate"><span class="pre">chown</span></code>, <code class="docutils literal notranslate"><span class="pre">chgrp</span></code> y <code class="docutils literal notranslate"><span class="pre">chmod</span></code>. Te recomiendo ver más especificaciones de cada uno con el comando <code class="docutils literal notranslate"><span class="pre">man</span></code>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">chown</span></code>
-: <em>change owner</em>. En general sólo lo utilizan quienes tienen permiso de administrador.</p>
-<p><code class="docutils literal notranslate"><span class="pre">chgrp</span></code>
-: <em>change group</em> .Se utiliza para cambiar el grupo propietario.</p>
-<p><code class="docutils literal notranslate"><span class="pre">chmod</span></code>
-: <em>change mode</em>. Permite cambiar los permisos de acceso de un fichero o directorio. La sintaxis que se utiliza es numérica, por ejemplo, si se quiere dar permiso de lectura, escritura y ejecución de un archivo para todos la sintaxis sería:</p>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">chown</span></code></dt><dd><p><em>change owner</em>. En general sólo lo utilizan quienes tienen permiso de administrador.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">chgrp</span></code></dt><dd><p><em>change group</em> .Se utiliza para cambiar el grupo propietario.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">chmod</span></code></dt><dd><p><em>change mode</em>. Permite cambiar los permisos de acceso de un fichero o directorio. La sintaxis que se utiliza es numérica, por ejemplo, si se quiere dar permiso de lectura, escritura y ejecución de un archivo para todos la sintaxis sería:</p>
+</dd>
+</dl>
 <br>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">777</span> archivo01.txt
 </pre></div>
@@ -439,8 +487,8 @@ Ahora ingresaremos una tabla donde separaremos cada valor por tabuladores `tab`.
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod a+x script.sh
 </pre></div>
 </div>
-</div>
-<div class="section" id="super-usuarios">
+</section>
+<section id="super-usuarios">
 <h3>Super usuarios<a class="headerlink" href="#super-usuarios" title="Permalink to this headline">¶</a></h3>
 <p>Todas las versiones de UNIX tienen un super-usuario el cual tiene TODOS los derechos y privilegios sobre el SO y los archivos dentro del mismo. Este usuario es <strong>root</strong> y pertenece al grupo del mismo nombre, siendo su UID y GID 0. Existe un comando especial llamado <code class="docutils literal notranslate"><span class="pre">sudo</span></code> (<em>super user do</em>) que al utilizarlo permite al usuario actual tener privilegios de super-usuario temporales. No te emociones, muchas veces se te solicita una contraseña cuando utilizar este comando.</p>
 <br>
@@ -448,9 +496,9 @@ Ahora ingresaremos una tabla donde separaremos cada valor por tabuladores `tab`.
 </pre></div>
 </div>
 <br>
-</div>
-</div>
-<div class="section" id="creacion-de-ligas-links">
+</section>
+</section>
+<section id="creacion-de-ligas-links">
 <h2>Creación de ligas (links)<a class="headerlink" href="#creacion-de-ligas-links" title="Permalink to this headline">¶</a></h2>
 <p>En los sistemas Linux es posible crear ligas o <em>links</em> entre archivos, es como crear un acceso directo o “<em>shortcut</em>.” Existen dos tipos de ligas las <em>hard</em> y las <em>soft</em> o simbólicas.</p>
 <br>
@@ -477,14 +525,16 @@ ln -s ../archivo01.txt
 </div>
 <p>Si enlistas tu carpeta, aparecerá el archivo y generalmente aparece resaltado en otro color:</p>
 <br>
-<div class="figure align-default" id="soft-link">
+<figure class="align-default" id="soft-link">
 <a class="reference internal image-reference" href="_images/soft_link.png"><img alt="_images/soft_link.png" src="_images/soft_link.png" style="height: 100px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Liga simbólica o <em>soft link</em>.</span><a class="headerlink" href="#soft-link" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Liga simbólica o <em>soft link</em>.</span><a class="headerlink" href="#soft-link" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <br>
 <p>Y si exploras el contenido con <code class="docutils literal notranslate"><span class="pre">file</span></code>, deberá aparecerte vacio (<em>empty</em>) debido aque solo es un acceso directo del archivo original.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

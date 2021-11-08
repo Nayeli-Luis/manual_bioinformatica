@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Glosario &#8212; Genómica computacional. Manual de bioinformática.</title>
+    <title>¿De dónde obtenemos datos biológicos? &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,7 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Práctica 1. Git y GitHub" href="p1_git_github.html" />
+    <link rel="next" title="Formatos de archivos" href="12_formatos.html" />
+    <link rel="prev" title="Introducción al análisis de datos biológicos con herramientas bioinformáticas." href="10_intro_analisis_datos_biol.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -167,14 +168,14 @@
   Introducción al análisis de secuencias de DNA
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="10_intro_analisis_datos_biol.html">
    Introducción al análisis de datos biológicos con herramientas bioinformáticas.
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="11_data_sources.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    ¿De dónde obtenemos datos biológicos?
   </a>
  </li>
@@ -201,9 +202,9 @@
   Glosario
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Glosario.html">
    Glosario
   </a>
  </li>
@@ -248,7 +249,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Glosario.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/11_data_sources.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -268,7 +269,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGlosario.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F11_data_sources.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -289,6 +290,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experimentos">
+   Experimentos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repositorios-de-secuencias-de-dna-rna-y-o-proteinas">
+   Repositorios de secuencias de DNA, RNA y/o proteínas
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -297,8 +316,57 @@
         
               <div>
                 
-  <section id="glosario">
-<h1>Glosario<a class="headerlink" href="#glosario" title="Permalink to this headline">¶</a></h1>
+  <section id="de-donde-obtenemos-datos-biologicos">
+<h1>¿De dónde obtenemos datos biológicos?<a class="headerlink" href="#de-donde-obtenemos-datos-biologicos" title="Permalink to this headline">¶</a></h1>
+<section id="experimentos">
+<h2>Experimentos<a class="headerlink" href="#experimentos" title="Permalink to this headline">¶</a></h2>
+<p>Cuando llevamos a cabo una investigación que involucra el estudio de DNA, seguimos un protocolo de biología molecular para que al final de todo el proceso podamos obtener un archivo con las secuencias de nuestra muestra. En general, los pasos a seguir son:</p>
+<br>
+<ol class="simple">
+<li><p>Extracción de DNA de nuestras muestras</p></li>
+<li><p>Secuenciación mediante la plataforma de nuestra preferencia.</p></li>
+</ol>
+<p>En algunos casos, se requiere un paso de amplificación, como en los estudios de metabarcoding. Para más información puedes revisar la sección de Métodos de biología molecular del <em>Manual de biología molecular para no biólogos</em>.</p>
+<div class="caution admonition">
+<p class="admonition-title">Toma en cuenta que</p>
+<p>Los estudios con DNA pueden ser de:</p>
+<ol class="simple">
+<li><p><strong>Genómica</strong>: Que es el estudio del conjunto completo de genes que hay en un organismo.</p></li>
+<li><p><strong>Metagenómica</strong>: Que es el estudio de una colección de genomas de una comunidad de organismos. Y es frecuentemente utilizado para el estudio de comunidades microbianas.</p></li>
+<li><p><em><strong>Metabarcoding</strong></em>: Este término hace referencia a la identificación de alto rendimiento de especies múltiples, utilizando DNA de origen ambiental, es decir, DNA en muestras de suelo, agua, etc. Con ésta técnica se busca un gen o un fragmento de gen en específico y no el conjunto de todos los genes.</p></li>
+</ol>
+</div>
+</section>
+<section id="repositorios-de-secuencias-de-dna-rna-y-o-proteinas">
+<h2>Repositorios de secuencias de DNA, RNA y/o proteínas<a class="headerlink" href="#repositorios-de-secuencias-de-dna-rna-y-o-proteinas" title="Permalink to this headline">¶</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="caution admonition">
+<p class="admonition-title">Rercuerda que</p>
+<p>En este curso nos enfocamos al análisis de secuencias de DNA.</p>
+</div>
+</aside>
+<p>El <em>International Nucleotide Sequence Database Collaboration</em> (<a href = "https://www.insdc.org/">INSDC</a>) ha hecho varios esfuerzos por mantener las secuencias de DNA originales de diversas investigaciones. Los miembors de éstas organizaciones son:</p>
+<br>
+<ul class="simple">
+<li><p><a href = "https://www.ncbi.nlm.nih.gov/">NCBI</a>: National Center for Biotechnology Information</p></li>
+<li><p><a href = "https://www.ebi.ac.uk/">EMBL</a>: European Molecular Biology Laboratory</p></li>
+<li><p><a href = "https://www.ddbj.nig.ac.jp/index-e.html">DDBJ</a>: DNA Data Bank of Japan</p></li>
+</ul>
+<br>
+<p>El INDSC propuso ciertas reglas para almacenar información contenida en DNA. Y quienes cumplen con estas reglas son los siguientes repositorios:</p>
+<br>
+<ul class="simple">
+<li><p><a href = "https://pubmed.ncbi.nlm.nih.gov/23193287/">Gene Bank</a>: contiene toda la información de secuencias de DNA anotadas e identificadas.</p></li>
+<li><p><a href = "https://www.ncbi.nlm.nih.gov/sra">SRA</a> (<em>Short Read Archive</em>): que contiene mediciones de experimentos de secuenciación de alto rendimiento.</p></li>
+<li><p><a href = "https://www.uniprot.org/">UniProt</a> (<em>Universal Protein Resource</em>): Repositorio de secuencias de proteínas.</p></li>
+<li><p><a href = "https://www.rcsb.org/">Protein Data Bank</a>: Repositorio de información estructural 3D de macromoléculas biológicas.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">Más repositorios</p>
+<p>Si quieres saber de más sitios donde puedes obtener datos de origen biológico te recomiendo el artículo de <a href = "https://drive.google.com/file/d/12B8FbkLM1hBVWFrIJrzraKwaopvmP6ND/view?usp=sharing">Database resources of the National Center for Biotechnology Information</a> (2019) de Sayers y colaboradores.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -326,7 +394,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="p1_git_github.html" title="previous page">Práctica 1. Git y GitHub</a>
+    <a class='left-prev' id="prev-link" href="10_intro_analisis_datos_biol.html" title="previous page">Introducción al análisis de datos biológicos con herramientas bioinformáticas.</a>
+    <a class='right-next' id="next-link" href="12_formatos.html" title="next page">Formatos de archivos</a>
 
         </div>
         

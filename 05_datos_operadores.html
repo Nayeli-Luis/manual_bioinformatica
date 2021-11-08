@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Datos, variables y operadores &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -89,7 +90,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -111,7 +112,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -123,7 +124,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -141,11 +142,50 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="07_control_flujo.html">
-   Control de flujo de un algortimo
+   Control de flujo de un algoritmo
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción a Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_python_intro.html">
+   Introducción a Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_sintaxis_basica.html">
+   Sintaxis básica
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Introducción al análisis de secuencias de DNA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_intro_analisis_datos_biol.html">
+   Introducción al análisis de datos biológicos con herramientas bioinformáticas.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_data_sources.html">
+   ¿De dónde obtenemos datos biológicos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12_formatos.html">
+   Formatos de archivos
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
  <span class="caption-text">
   Prácticas
  </span>
@@ -157,7 +197,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Glosario
  </span>
@@ -332,12 +372,12 @@
         
               <div>
                 
-  <div class="section" id="datos-variables-y-operadores">
+  <section id="datos-variables-y-operadores">
 <h1>Datos, variables y operadores<a class="headerlink" href="#datos-variables-y-operadores" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="datos">
+<section id="datos">
 <h2>Datos<a class="headerlink" href="#datos" title="Permalink to this headline">¶</a></h2>
 <p>Un dato es una representación simbólica (un número, letra, grafo, lo que quieras) de una característica de un elemento u objeto. Los datos pueden clasificarse en función de su composición, si son números, si tienen caracteres alfanuméricos, etc.</p>
-<div class="section" id="datos-alfanumericos">
+<section id="datos-alfanumericos">
 <h3>Datos alfanuméricos<a class="headerlink" href="#datos-alfanumericos" title="Permalink to this headline">¶</a></h3>
 <p>Estos datos se componen de la combinación de todos los caracteres conocidos, letras, dígitos, caracteres especiales (como ·, % ,/, _, etc.).  Estos se dividen en:</p>
 <ul class="simple">
@@ -348,21 +388,21 @@
 <p class="admonition-title">Nota</p>
 <p>En la mayoría de los lenguajes de programación, este tipo de datos se escribe entre comillas o comillas simples. Así indicamos que se trata de una <em>string</em> o caracter.</p>
 </div>
-</div>
-<div class="section" id="datos-numericos">
+</section>
+<section id="datos-numericos">
 <h3>Datos numéricos<a class="headerlink" href="#datos-numericos" title="Permalink to this headline">¶</a></h3>
 <p>Son los datos que se componen únicamente por números y signos positivo o  negativo. Estos se dividen en:</p>
 <ul class="simple">
 <li><p>Enteros: Números que no tienen punto decimal.</p></li>
 <li><p>Reales, flotantes o <em>float</em>: Son datos con un componente decimal, pueden ser negativos, positivos o cero.</p></li>
 </ul>
-</div>
-<div class="section" id="datos-logicos-o-booleanos">
+</section>
+<section id="datos-logicos-o-booleanos">
 <h3>Datos lógicos o booleanos<a class="headerlink" href="#datos-logicos-o-booleanos" title="Permalink to this headline">¶</a></h3>
 <p>Son aquellos que toman solo uno de dos posibles valores: <code class="docutils literal notranslate"><span class="pre">Verdadero</span></code>/<code class="docutils literal notranslate"><span class="pre">True</span></code>o <code class="docutils literal notranslate"><span class="pre">Falso</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code>. Estos son equivalentos a los dígitos del sistema binario: 1 = Verdadero y 0 = Falso.</p>
-</div>
-</div>
-<div class="section" id="variables">
+</section>
+</section>
+<section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <p>En programación, una variable es una posición o espacio de memoria en el cual se almacena un dato. Su valor puede cambiar en cualquier momento de la ejecución de un programa, de ahí su nombre.</p>
 <br>
@@ -372,11 +412,11 @@
 <li><p>Nombre o identificador: Será la manera en que el programa se refiera al mismo dato durante toda su ejecución. Es importante que los identificadores sean descriptivos.</p></li>
 <li><p>Contenido</p></li>
 </ul>
-</div>
-<div class="section" id="operadores">
+</section>
+<section id="operadores">
 <h2>Operadores<a class="headerlink" href="#operadores" title="Permalink to this headline">¶</a></h2>
 <p>Un operador es un símbolo que permite realizar una operación con números o con datos que se encuentran almacenados en variables. En programación existen tres tipos: aritméticos, relacionales y lógicos.</p>
-<div class="section" id="operadores-aritmeticos">
+<section id="operadores-aritmeticos">
 <h3>Operadores aritméticos<a class="headerlink" href="#operadores-aritmeticos" title="Permalink to this headline">¶</a></h3>
 <p>Se usan para realizar operaciones aritméticas entre datos numéricos.</p>
 <br>
@@ -407,8 +447,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="operadores-relacionales-o-de-comparacion">
+</section>
+<section id="operadores-relacionales-o-de-comparacion">
 <h3>Operadores relacionales o de comparación<a class="headerlink" href="#operadores-relacionales-o-de-comparacion" title="Permalink to this headline">¶</a></h3>
 <br>
 Se utilizan para escribir expresiones de comparación, las cuales van a producir un resultado lógico o booleano (Verdadero o Falso).
@@ -439,8 +479,8 @@ Se utilizan para escribir expresiones de comparación, las cuales van a producir
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="operadores-logicos">
+</section>
+<section id="operadores-logicos">
 <h3>Operadores lógicos<a class="headerlink" href="#operadores-logicos" title="Permalink to this headline">¶</a></h3>
 <p>Se utilizan para crear expresiones lógicas cuyo resultado sera de tipo lógico, es decir, verdadero o falso.</p>
 <table class="colwidths-auto table">
@@ -462,7 +502,7 @@ Se utilizan para escribir expresiones de comparación, las cuales van a producir
 </tbody>
 </table>
 <p>Para aplicar estos operadores es necesario conocer las tablas de verdad.</p>
-<div class="section" id="and">
+<section id="and">
 <h4>AND<a class="headerlink" href="#and" title="Permalink to this headline">¶</a></h4>
 <p>Para el operador <code class="docutils literal notranslate"><span class="pre">AND</span></code>, consideremos <code class="docutils literal notranslate"><span class="pre">p</span></code> y <code class="docutils literal notranslate"><span class="pre">q</span></code> como dos expresiones diferentes.</p>
 <table class="colwidths-auto table">
@@ -501,8 +541,8 @@ p AND q = Falso
 </pre></div>
 </div>
 <p>Es decir que, ambas expresiones deben ser ciertas para que el resultado sea cierto.</p>
-</div>
-<div class="section" id="or">
+</section>
+<section id="or">
 <h4>OR<a class="headerlink" href="#or" title="Permalink to this headline">¶</a></h4>
 <p>Para el operador <code class="docutils literal notranslate"><span class="pre">OR</span></code> la tabla de verdad sería la siguiente:</p>
 <br>
@@ -534,8 +574,8 @@ p AND q = Falso
 </table>
 <br>
 <p>En este caso, solo se requiere que una de las expresiones sea cierta, para que el resultado de la lógica sea cierta.</p>
-</div>
-<div class="section" id="not">
+</section>
+<section id="not">
 <h4>NOT<a class="headerlink" href="#not" title="Permalink to this headline">¶</a></h4>
 <p>El operador <code class="docutils literal notranslate"><span class="pre">NOT</span></code> literalmente es una negación,  entonces:</p>
  <br>
@@ -558,10 +598,10 @@ p AND q = Falso
 <p class="admonition-title">Nota importante</p>
 <p>Éste capítulo es una modificación de una parte del siguiente libro: Herrera morales, J.O, Gutiérrez posada, J.E y Pulgarin Giraldo, R. (2017). <em>Introducción a la Lógica de Programación</em>. (1a ed.). Colombia: EIIZCOM.</p>
 </div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
