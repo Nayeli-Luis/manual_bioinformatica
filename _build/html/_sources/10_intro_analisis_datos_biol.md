@@ -1,4 +1,5 @@
 # Introducción al análisis de datos biológicos con herramientas bioinformáticas.
+**Autora: M. Nayeli Luis-Vargas**
 
 En general, el análisis de datos en bioinformática aparenta ser sencillo. Tenemos un conjuto de datos, los análizamos con alguna herramienta bioinformática y obtenemos una respuesta.
 

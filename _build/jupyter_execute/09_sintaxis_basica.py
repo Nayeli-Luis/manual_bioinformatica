@@ -2,10 +2,12 @@
 # coding: utf-8
 
 # # Sintaxis básica
+# **Autora: M. Nayeli Luis-Vargas**
 
 # ## Variables
 # 
 # Reglas para asignar variables:
+# 
 # 
 # * Siempre debe iniciar con letra (mayúscula o minúscula) o un guión bajo.
 # * Puede contener números, solamente después de la primera letra.

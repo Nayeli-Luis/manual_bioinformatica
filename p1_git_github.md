@@ -1,4 +1,5 @@
 # Práctica 1. Git y GitHub
+**Autora: Marisol Navarro**
 
 :::{admonition} Objetivo
 :class: tip

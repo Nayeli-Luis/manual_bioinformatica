@@ -1,4 +1,5 @@
 # Datos, variables y operadores
+**Autora: M. Nayeli Luis-Vargas**
 
 ## Datos
 Un dato es una representación simbólica (un número, letra, grafo, lo que quieras) de una característica de un elemento u objeto. Los datos pueden clasificarse en función de su composición, si son números, si tienen caracteres alfanuméricos, etc.

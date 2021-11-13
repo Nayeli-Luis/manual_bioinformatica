@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introducción a Python &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -23,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,17 +33,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -90,7 +89,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -112,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -124,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -146,7 +145,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Python
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción al análisis de secuencias de DNA
  </span>
@@ -184,8 +183,13 @@
    Formatos de archivos
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13_workflow_genome.html">
+   Flujo de trabajo para análisis de genomas
+  </a>
+ </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Prácticas
  </span>
@@ -202,7 +206,19 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1_phred.html">
+   Score de calidad Phred
+  </a>
+ </li>
+</ul>
+<p class="caption">
  <span class="caption-text">
   Glosario
  </span>
@@ -270,11 +286,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/solnavss/Genomica_Computacional"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F08_python_intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2F08_python_intro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -328,8 +344,9 @@
         
               <div>
                 
-  <section id="introduccion-a-python">
+  <div class="section" id="introduccion-a-python">
 <h1>Introducción a Python<a class="headerlink" href="#introduccion-a-python" title="Permalink to this headline">¶</a></h1>
+<p><strong>Autora: M. Nayeli Luis-Vargas</strong></p>
 <div class="important admonition">
 <p class="admonition-title">Objetivo</p>
 <ul class="simple">
@@ -338,46 +355,40 @@
 </div>
 <p>Una vez que conoces lo fundamentos para escribir un algoritmo, podemos pasar a escribir código en un lenguaje de programación. Python es un leguaje de programación de alto nivel, es decir, que su lenguaje es más parecido al que tenemos los humanos que al que tienen las máquinas. Es fácil de enteder y por tanto, fácil de leer y escribir.</p>
 <p>Actualmente, Python es utilizado en diversas áreas de la computación como en el desarrollo de aplicaciones, videojuegos, así como en el análisis de datos masivo. Además cuenta con una enorme comunidad y gran cantidad de paquetes que nos facilitan la vida (como <code class="docutils literal notranslate"><span class="pre">conda</span></code> y <code class="docutils literal notranslate"><span class="pre">pip</span></code>). En ésta sección vamos a ver la sintaxis básica de Python.</p>
-<section id="instalacion-de-python">
+<div class="section" id="instalacion-de-python">
 <h2>Instalación de Python<a class="headerlink" href="#instalacion-de-python" title="Permalink to this headline">¶</a></h2>
-<section id="entornos-globales-de-python">
+<div class="section" id="entornos-globales-de-python">
 <h3>Entornos globales de Python<a class="headerlink" href="#entornos-globales-de-python" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Python común (<em>stock Python</em>): Es el Python que se instala en el sistema operativo y se puede usar el interprete del lenguaje desde la consola del mismo sistema operativo. Este lo puedes descargar desde <a class="reference external" href="https://www.python.org/">https://www.python.org/</a>, además el gestor de paquetes es local con <code class="docutils literal notranslate"><span class="pre">pip</span></code>, es decir, <code class="docutils literal notranslate"><span class="pre">pip</span></code> solo gestiona paquetes de Python.</p></li>
 <li><p>Python gestionado por un sistema de gestión de paquetes (como <code class="docutils literal notranslate"><span class="pre">conda</span></code>): En este caso, <code class="docutils literal notranslate"><span class="pre">Conda</span></code> gestiona paquetes para toda la pila de software (c++, R, Git) requerida por los usuarios, incluyendo Python y varias paqueterías. Además, <code class="docutils literal notranslate"><span class="pre">conda</span></code> puede cambiar y administrar múltiples entornos virtuales con diferentes versiones de Python si es necesario. <code class="docutils literal notranslate"><span class="pre">conda</span></code> tiene dos instaladores Miniconda y Anaconda, la diferencia entre <code class="docutils literal notranslate"><span class="pre">conda</span></code>, Miniconda y Anacoda son:</p></li>
 </ul>
-<figure class="align-default" id="id1">
+<div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="_images/conda_mini_ana.png"><img alt="_images/conda_mini_ana.png" src="_images/conda_mini_ana.png" style="height: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Diferencias entre conda, Miniconda y Anaconda.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Diferencias entre conda, Miniconda y Anaconda.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
 <div class="caution admonition">
 <p class="admonition-title">Recomendación</p>
 <p>Instala Anaconda: <a class="reference external" href="https://repo.anaconda.com/">https://repo.anaconda.com/</a>, si tienes poco espacio entonces Miniconda: <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a></p>
 </div>
-</section>
-</section>
-<section id="y-luego-aprende-a-usar-python">
+</div>
+</div>
+<div class="section" id="y-luego-aprende-a-usar-python">
 <h2>¿Y luego?: Aprende a usar Python<a class="headerlink" href="#y-luego-aprende-a-usar-python" title="Permalink to this headline">¶</a></h2>
 <p>Una vez que tengas instalado Anaconda puedes usar el <strong>interprete</strong>, es decir, abrir la terminal de tu computadora y teclear <strong>python</strong>, y te aparecerá algo similar a esto:</p>
-<figure class="align-default" id="interprete">
+<div class="figure align-default" id="interprete">
 <a class="reference internal image-reference" href="_images/interprete.png"><img alt="_images/interprete.png" src="_images/interprete.png" style="height: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Interprete de Python</span><a class="headerlink" href="#interprete" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Interprete de Python</span><a class="headerlink" href="#interprete" title="Permalink to this image">¶</a></p>
+</div>
 <p>Como puedes notar, la línea comienza con &gt;&gt;&gt;, es aquí donde puedes escribir tu código en Python.</p>
 <p>También puedes utilizar un modo interactivo (<a href = "https://es.wikipedia.org/wiki/IPython">IPython</a>) como Jupyter Notebook. Jupyter Notebook es una aplicación web que te permite crear y compartir documentos que contienen código, ecuacione, visualizaciones y texto. Para crear una libreta de Jupyter Notebook, solo debes escribir en una nueva terminal (NO en el interprete de Python) <code class="docutils literal notranslate"><span class="pre">jupyter-notebook</span></code>. Te abrirá una ventana en tu navegador que te mostrará los archivos de tu computadora:</p>
-<figure class="align-default" id="jupyter-botebook">
+<div class="figure align-default" id="jupyter-botebook">
 <a class="reference internal image-reference" href="_images/jupyter-notebook.png"><img alt="_images/jupyter-notebook.png" src="_images/jupyter-notebook.png" style="height: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Jupyter Notebook</span><a class="headerlink" href="#jupyter-botebook" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Jupyter Notebook</span><a class="headerlink" href="#jupyter-botebook" title="Permalink to this image">¶</a></p>
+</div>
 <p>Aquí podrás moverte como si fuera el gestor de archivos de tu computadora y crear una nueva libreta dando click en el boton <code class="docutils literal notranslate"><span class="pre">New</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code>, que se encuentra en lado superior derecho. Aquí es donde podrás escribir código, para luego guardarlo y visualizarlo.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

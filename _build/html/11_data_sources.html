@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¿De dónde obtenemos datos biológicos? &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -23,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,17 +33,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -90,7 +89,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -112,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -124,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -146,7 +145,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Python
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción al análisis de secuencias de DNA
  </span>
@@ -184,8 +183,13 @@
    Formatos de archivos
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13_workflow_genome.html">
+   Flujo de trabajo para análisis de genomas
+  </a>
+ </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Prácticas
  </span>
@@ -202,7 +206,19 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1_phred.html">
+   Score de calidad Phred
+  </a>
+ </li>
+</ul>
+<p class="caption">
  <span class="caption-text">
   Glosario
  </span>
@@ -270,11 +286,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/solnavss/Genomica_Computacional"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F11_data_sources.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2F11_data_sources.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -310,6 +326,23 @@
    Repositorios de secuencias de DNA, RNA y/o proteínas
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#obtencion-de-secuencias-del-ncbi">
+   Obtención de secuencias del NCBI
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descargar-secuencias-de-dna">
+     Descargar secuencias de DNA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descargar-secuencias-de-proteinas">
+     Descargar secuencias de proteínas
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -321,9 +354,10 @@
         
               <div>
                 
-  <section id="de-donde-obtenemos-datos-biologicos">
+  <div class="section" id="de-donde-obtenemos-datos-biologicos">
 <h1>¿De dónde obtenemos datos biológicos?<a class="headerlink" href="#de-donde-obtenemos-datos-biologicos" title="Permalink to this headline">¶</a></h1>
-<section id="experimentos">
+<p><strong>Autoras: M. Nayeli Luis-Vargas y Marisol Navarro</strong></p>
+<div class="section" id="experimentos">
 <h2>Experimentos<a class="headerlink" href="#experimentos" title="Permalink to this headline">¶</a></h2>
 <p>Cuando llevamos a cabo una investigación que involucra el estudio de DNA, seguimos un protocolo de biología molecular para que al final de todo el proceso podamos obtener un archivo con las secuencias de nuestra muestra. En general, los pasos a seguir son:</p>
 <br>
@@ -341,16 +375,16 @@
 <li><p><em><strong>Metabarcoding</strong></em>: Este término hace referencia a la identificación de alto rendimiento de especies múltiples, utilizando DNA de origen ambiental, es decir, DNA en muestras de suelo, agua, etc. Con ésta técnica se busca un gen o un fragmento de gen en específico y no el conjunto de todos los genes.</p></li>
 </ol>
 </div>
-</section>
-<section id="repositorios-de-secuencias-de-dna-rna-y-o-proteinas">
+</div>
+<div class="section" id="repositorios-de-secuencias-de-dna-rna-y-o-proteinas">
 <h2>Repositorios de secuencias de DNA, RNA y/o proteínas<a class="headerlink" href="#repositorios-de-secuencias-de-dna-rna-y-o-proteinas" title="Permalink to this headline">¶</a></h2>
-<aside class="margin sidebar">
+<div class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="caution admonition">
 <p class="admonition-title">Rercuerda que</p>
 <p>En este curso nos enfocamos al análisis de secuencias de DNA.</p>
 </div>
-</aside>
+</div>
 <p>El <em>International Nucleotide Sequence Database Collaboration</em> (<a href = "https://www.insdc.org/">INSDC</a>) ha hecho varios esfuerzos por mantener las secuencias de DNA originales de diversas investigaciones. Los miembors de éstas organizaciones son:</p>
 <br>
 <ul class="simple">
@@ -371,8 +405,58 @@
 <p class="admonition-title">Más repositorios</p>
 <p>Si quieres saber de más sitios donde puedes obtener datos de origen biológico te recomiendo el artículo de <a href = "https://drive.google.com/file/d/12B8FbkLM1hBVWFrIJrzraKwaopvmP6ND/view?usp=sharing">Database resources of the National Center for Biotechnology Information</a> (2019) de Sayers y colaboradores.</p>
 </div>
-</section>
-</section>
+</div>
+<div class="section" id="obtencion-de-secuencias-del-ncbi">
+<h2>Obtención de secuencias del NCBI<a class="headerlink" href="#obtencion-de-secuencias-del-ncbi" title="Permalink to this headline">¶</a></h2>
+<p>En ésta sección aprenderás a descargar secuencias desde el <em>National Center for Biotechnology Information</em> (NCBI):</p>
+<div class="section" id="descargar-secuencias-de-dna">
+<h3>Descargar secuencias de DNA<a class="headerlink" href="#descargar-secuencias-de-dna" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Entra a la página del NCBI <a class="reference external" href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>. Escribe en el buscador el organismo que deseas, en este caso buscaremos el genoma del virus que provocó la pandemia actual. Da click en “buscar”.</p></li>
+</ul>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/ncbi1.png"><img alt="_images/ncbi1.png" src="_images/ncbi1.png" style="height: 350px;" /></a>
+</div>
+<ul class="simple">
+<li><p>Te redirigirá a otra página con los datos del organismo. Da click en el recuadro que dice “Reference genome”.</p></li>
+</ul>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/ncbi2.png"><img alt="_images/ncbi2.png" src="_images/ncbi2.png" style="height: 300px;" /></a>
+</div>
+<ul class="simple">
+<li><p>En seguida te redirigirá a una página con un formato de GeneBank (en el siguiente apartado vemos los formatos). Da clcik en “Send to:” y selecciona las opciones “Complete Record” y “File”. Te desplegará un pequeño apartado que dice “Format” primero seleccionaras el que diga <code class="docutils literal notranslate"><span class="pre">FASTA</span></code> y darás click en “Create File”. Te descargará un archivo con nombre <code class="docutils literal notranslate"><span class="pre">sequence.fasta</span></code>. Repetirás el proceso para ahroa descargar un archivo con formato <code class="docutils literal notranslate"><span class="pre">GFF3</span></code>, tendrás un segundo archivo con nombre <code class="docutils literal notranslate"><span class="pre">sequence.GFF3</span></code>.</p></li>
+</ul>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/ncbi3.png"><img alt="_images/ncbi3.png" src="_images/ncbi3.png" style="height: 350px;" /></a>
+</div>
+</div>
+<div class="section" id="descargar-secuencias-de-proteinas">
+<h3>Descargar secuencias de proteínas<a class="headerlink" href="#descargar-secuencias-de-proteinas" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Entra a la página del NCBI <a class="reference external" href="https://www.ncbi.nlm.nih.gov/g">https://www.ncbi.nlm.nih.gov/g</a>. Escribe en el buscador la proteína  que deseas, en este caso buscaremos una proteína del virus que provocó la pandemia actual (<em>sars cov-2 spike ectodomain</em>). Luego, despliega el menú en donde dice “All Databases” y selecciona “Structure”. Da click en “buscar”.</p></li>
+</ul>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/ncbi4.png"><img alt="_images/ncbi4.png" src="_images/ncbi4.png" style="height: 350px;" /></a>
+</div>
+<ul class="simple">
+<li><p>Da click en la opción 2: <em>Structure of the SARS-CoV-2 spike glycoprotein (closed state)[VIRAL PROTEIN]</em> . Te redirigirá a otro sitio y ahí da click en “Download sequence data”.</p></li>
+</ul>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/ncbi5.png"><img alt="_images/ncbi5.png" src="_images/ncbi5.png" style="height: 350px;" /></a>
+</div>
+<ul class="simple">
+<li><p>Descargarás las cadenas A, B y C. Para esto, 1. selecciona la cadena, 2. da click en “Send to:”, 3. Selecciona “File”, 4. seleccciona en archivo <code class="docutils literal notranslate"><span class="pre">FASTA</span></code> y “default order” y, por último 4. Click en “create file”.</p></li>
+</ul>
+<div class="caution admonition">
+<p class="admonition-title">Atención</p>
+<p>Debes seleccionarlas y descargarlas una por una, para que al final tengas tres archivos.</p>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/ncbi6.png"><img alt="_images/ncbi6.png" src="_images/ncbi6.png" style="height: 400px;" /></a>
+</div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

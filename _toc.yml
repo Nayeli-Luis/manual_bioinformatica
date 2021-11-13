@@ -26,10 +26,14 @@ parts:
     - file: 10_intro_analisis_datos_biol
     - file: 11_data_sources
     - file: 12_formatos
+    - file: 13_workflow_genome
   - caption: Prácticas
     chapters:
     - file: p1_git_github
     - file: p2_intro_python
+  - caption: Anexos
+    chapters:
+    - file: a1_phred 
   - caption: Glosario
     chapters:
     - file: Glosario

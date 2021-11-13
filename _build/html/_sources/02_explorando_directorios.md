@@ -1,4 +1,5 @@
 # Explorando directorios desde la terminal
+**Autora: M. Nayeli Luis-Vargas**
 
 :::{admonition} Objetivo
 :class: tip

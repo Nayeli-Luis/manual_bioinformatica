@@ -1,7 +1,7 @@
 
 
 # Introducción a linea de comandos
-
+**Autora: M. Nayeli Luis-Vargas**
 
 :::{admonition} Objetivo
 :class: tip
@@ -25,13 +25,14 @@ Linux es un sistema operativo (SO) como Microsoft Windows o Mac OS. Un SO es un 
 Ahora un poco de historia... El término Linux se refiere a una familia de sistemas operativos de código abierto similares a Unix basados en el kernel de Linux, el cual fue desarrollado por Linus Torvalds y lanzado por primera vez en 1991. Unix en sí se refiere a una familia de SO multitarea y multiusuario todo derivado del AT&T Unix original que se desarrolló a fines de la década de 1970. En la práctica, aunque Unix se refiere estrictamente a un sistema operativo comercial y Linux se refiere a un sistema operativo de código abierto disponible gratuitamente, las dos palabras tienden a usarse indistintamente.
 
 ## La terminal
-````{margin}
-```{note}
+::::{margin}
+:::{admonition} Terminus
+:class: note
 Aquí un enlace para una terminal online
 <br>
 <a href = "https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html"> Terminus </a>
-```
-````
+:::
+::::
 
 La terminal es un software que permite la interacción de usuario con la computadora escribiendo simples comandos de texto. Todas las computadoras con SO Linux contienen una terminal, Mac OS también tienen su equivalente, sin embargo, las versiones actuales de Windows no.
 

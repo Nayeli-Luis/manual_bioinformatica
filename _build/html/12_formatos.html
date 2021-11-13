@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formatos de archivos &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -23,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,17 +33,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -52,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Práctica 1. Git y GitHub" href="p1_git_github.html" />
+    <link rel="next" title="Flujo de trabajo para análisis de genomas" href="13_workflow_genome.html" />
     <link rel="prev" title="¿De dónde obtenemos datos biológicos?" href="11_data_sources.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -90,7 +89,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -112,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -124,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -146,7 +145,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Python
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción al análisis de secuencias de DNA
  </span>
@@ -184,8 +183,13 @@
    Formatos de archivos
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13_workflow_genome.html">
+   Flujo de trabajo para análisis de genomas
+  </a>
+ </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Prácticas
  </span>
@@ -202,7 +206,19 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1_phred.html">
+   Score de calidad Phred
+  </a>
+ </li>
+</ul>
+<p class="caption">
  <span class="caption-text">
   Glosario
  </span>
@@ -270,11 +286,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/solnavss/Genomica_Computacional"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F12_formatos.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2F12_formatos.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -341,10 +357,11 @@
         
               <div>
                 
-  <section id="formatos-de-archivos">
+  <div class="section" id="formatos-de-archivos">
 <h1>Formatos de archivos<a class="headerlink" href="#formatos-de-archivos" title="Permalink to this headline">¶</a></h1>
+<p><strong>Autora: M. Nayeli Luis-Vargas</strong></p>
 <p>A lo largo de el análisis de datos de origen biológico te vas a encontrar con diferentes formatos de los archivos resultantes de la secuenciación de tus muestras o de un proceso bioinformático. Por tanto, es importante que conozcas el tipo de información que guarda los principales formatos con los que te puedes encontrar.</p>
-<section id="genbank">
+<div class="section" id="genbank">
 <h2>GENBANK<a class="headerlink" href="#genbank" title="Permalink to this headline">¶</a></h2>
 <p>Es el formato de archivo más antiguo y clásico. Sus extensiones son <code class="docutils literal notranslate"><span class="pre">.gb</span></code>, <code class="docutils literal notranslate"><span class="pre">.gbff</span></code>, <code class="docutils literal notranslate"><span class="pre">.genbank</span></code>. Está diseñado para que sea fácilmente entendido por seres humanos. Aquí un ejemplo:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>LOCUS       CP010822             2158963 bp    DNA     circular BCT 19-OCT-2015
@@ -359,8 +376,8 @@ SOURCE      Thermus aquaticus Y51MC23
             Bacteria; Deinococcus-Thermus; Deinococci; Thermales; Thermaceae;
 </pre></div>
 </div>
-</section>
-<section id="fasta">
+</div>
+<div class="section" id="fasta">
 <h2>FASTA<a class="headerlink" href="#fasta" title="Permalink to this headline">¶</a></h2>
 <p>Es un formato de texto plano que contiene las secuencias crudas, este formato es el que otorgan las plataformas de secuenciación. Puede tener las siguientes extensiones: <code class="docutils literal notranslate"><span class="pre">.faa</span></code>, <code class="docutils literal notranslate"><span class="pre">.fna</span></code>, <code class="docutils literal notranslate"><span class="pre">.fasta</span></code>. El formato es:</p>
 <ul class="simple">
@@ -380,16 +397,16 @@ CGCCATCCGCGAGGACCGCATGGCGGAGTTCCGGGAGCGGTACCGCTCCGTGGACCTCCTCCTGGTGGACGACATCCAGT
 TCATCGCCGGCAAGGAAAGGACGCAGGAGGAGTTCTTCCACACCTTCAACGCCCTCTTTGAGGCCCACAAGCAGATCATC
 </pre></div>
 </div>
-</section>
-<section id="fastaq">
+</div>
+<div class="section" id="fastaq">
 <h2>FASTAQ<a class="headerlink" href="#fastaq" title="Permalink to this headline">¶</a></h2>
 <!-- Hacer un anexo del score de Phred-->
 <p>Es una variante del formato FASTA, solo que tiene asociado datos sobre la calidad de cada secuencia. Los archivos con formato FASTAQ consisten en 4 secciones:</p>
 <ol class="simple">
 <li><p>Un encabezado por secuencia que inicia con arroba (&#64;), seguido por el ID de la secuencia y más texto opcional como la descripción.</p></li>
 <li><p>La segunda sección contiene la secuencia, generalmente solo utiliza una línea.</p></li>
-<li><p>La línea inicia con símbolo más (+) y puede contener texto opcional.</p></li>
-<li><p>Contiene los valores de calidad codificados en caracteres ASCII y tiene la misma longitud que la secuencia. Cada caracter representa un número y la codificación puede ser diferente, en general se utiliza el score de calidad Phred.</p></li>
+<li><p>la tercera línea inicia con símbolo más (+) y puede contener texto opcional.</p></li>
+<li><p>LA cuarta contiene los valores de calidad codificados en caracteres <a href = "https://www.ascii-code.com/" >ASCII</a> y tiene la misma longitud que la secuencia. Cada caracter representa un número y la codificación puede ser diferente, en general se utiliza el score de calidad Phred. Para entender en qué consiste el score de calidad Phred puedes leer el anexo de éste manual <em>Score de calidad Phred</em>.</p></li>
 </ol>
 <p>De manera que los archivos FASTAQ se pueden ver de la siguiente forma:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@ERR059938.60 HS9_6783:8:2304:19291:186369#7/2
@@ -398,8 +415,8 @@ GTCTCCGGGGGCTGGGGGAACCAGGGGTTCCCACCAACCACCCTCACTCAGCCTTTTCCCTCCAGGCATCTCTGGGAAAG
 7?CIGJB:D:-F7LA:GI9FDHBIJ7,GHGJBKHNI7IN,EML8IFIA7HN7J6,L6686LCJE?JKA6G7AK6GK5C6@6IK+++?5+=&lt;;227*6054
 </pre></div>
 </div>
-</section>
-<section id="gff-gtf">
+</div>
+<div class="section" id="gff-gtf">
 <h2>GFF/GTF<a class="headerlink" href="#gff-gtf" title="Permalink to this headline">¶</a></h2>
 <p>Los formatos de <em>General Feature Format</em> (GFF) y <em>General Transfer Format</em> (GTF),
 son archivos que contienen las anotaciones de los genes después de haber llevado a cabo un ensamble, donde cada línea corresponde a un gen o un objeto. En particula, un archivo GTF es idéntico a un archivo GFF versión 2. Estos archivos contienen nueve columnas separadas por tabuladores que arrojan información sobre: el nombre de la secuencia, la fuente de procedencia de la anotación, la característica de gen, los nucleótidos de inicio del gen , los nucleótidos de  fin del gen, el grado de confianza, la hebra de DNA que se transcribe, la fase de anotación de los codones y  una columna con otros atributos del gen.</p>
@@ -431,16 +448,16 @@ NZ_CP010822.1 RefSeq  gene  7 1326  . + . gene_id &quot;TO73_RS00005&quot;; tran
 </dl>
 <p><code class="docutils literal notranslate"><span class="pre">[attribute]</span></code>
 Una lista separada por punto y coma (;) de otros atributos del gen como un identificador global del gen, un identificador global del transcrito, entre otros.</p>
-</section>
-<section id="sam-bam">
+</div>
+<div class="section" id="sam-bam">
 <h2>SAM/BAM<a class="headerlink" href="#sam-bam" title="Permalink to this headline">¶</a></h2>
 <p>Los formatos SAM/BAM son conocidos como mapas de alineamiento de secuencias (<em>Sequence Alignment Maps</em>). Estos archivos representan los resultados de alineamiento de un FASTQ con un archivo FASTA de referencia y describe las alienaciones individuales por pares que se encontraron. Diferentes algoritmos pueden crear alineamientos (archivos SAM/BAM). La diferencia entre una archivo SAM y uno BAM, es que el BAM es el formato binario del SAM, es decir, es más pequeño y necesita un interprete para poder ser leído por humanos.</p>
 <p>Visión de un archivo BAM:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>MT_orang  0 MT_human  577 60  14M2D4M3I37M1D85M1D232M1I559M1D6M1I550M1D2M1D146M2I3M1D3M1D132M1D3M1I40M3I13M1D1M1D335M3I4M1D3M2D342M1D52M1I13M3I1M2D52M1I592M1D3M1I485M1D5M1I974M3I4M3D230M1D59M1D156M1D31M1I98M1I26M14I329M3I7M3D1203M1D4M1I70M1D345M1D9M1I398M7I8M8I1M1I9M3I2M1I2M1D390M1I5M1D193M1I6M1D195M1D7M1I1826M1D10M1I1256M1D49M1D157M3D5M3I48M2I1M1I3M3D1203M1I2M2D1M1I44M2D2M1I2M1I38M2D16M2I2079M1I5M1D50M1D3M1I43M5I57M1I54M4D19M1I39M2D8M1I7M1I22M1I5M1I4M1D5M1I2M2D29M2I20M1D13M2I1M1D8M1D45M1D15M1I5M2D17M1D56M1D2M1I131M1I38M474S  * 0 0 GTTTATGTAGCTTATTCTATCCAAAGCAATGCACTGAAAATGTCTCGACGGGCCCACACGCCCCATAAACAAATAGGTTTGGTCCTAGCCTTTCTATTAGCTCTTAGTGAGGTTACACATGCAAGCTCTCAACAACCCTACCCCATCAACCCAACAAAATCCAATTTTTATCTTTAGGCTATGTGCACTTTCAACAGGCACCCCTCAACTAACACAATCTCCTTCTTATCCCACCCACCAACCCCCCCCCCCCCTTCCTCCCTCTTTCTCCATTTTCCCCACAAACACCGCTACTACCCCCACACCCCAGACCAACCCAACCCAAAAGACACCCCGCACG * NM:i:2322 ms:i:18279  AS:i:18198  nn:i:0  tp:A:P  cm:i:342  s1:i:3187 s2:i:0  de:f:0.1405 rl:i:0
 </pre></div>
 </div>
-</section>
-<section id="vcf">
+</div>
+<div class="section" id="vcf">
 <h2>VCF<a class="headerlink" href="#vcf" title="Permalink to this headline">¶</a></h2>
 <p>El formato VCF (<em>Variant Call Format</em>) es un archivo delimitado por tabuladores y describe la variación de alineaciones con respecto a una referencia. Este archivo se genera a partir de un archivo BAM. Las extensiones de éste formato son <code class="docutils literal notranslate"><span class="pre">.vcf</span></code>, <code class="docutils literal notranslate"><span class="pre">.bcf</span></code>.</p>
 <p>Visión de un archivo VCF</p>
@@ -473,8 +490,8 @@ Una lista separada por punto y coma (;) de otros atributos del gen como un ident
 <p class="admonition-title">Para saber más…</p>
 <p>Para saber con más detalle qué significa cada parámetro de los archivos BAM/SAM y VCF te recomiendo leer con detenimiento los documentos de la página <a href = "https://samtools.github.io/hts-specs/"><em>SAM/BAM and related specifications</em></a>.</p>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -502,7 +519,7 @@ Una lista separada por punto y coma (;) de otros atributos del gen como un ident
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="11_data_sources.html" title="previous page">¿De dónde obtenemos datos biológicos?</a>
-    <a class='right-next' id="next-link" href="p1_git_github.html" title="next page">Práctica 1. Git y GitHub</a>
+    <a class='right-next' id="next-link" href="13_workflow_genome.html" title="next page">Flujo de trabajo para análisis de genomas</a>
 
         </div>
         
