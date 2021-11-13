@@ -1,5 +1,5 @@
 #  Control de flujo de un algoritmo
-
+**Autora: M. Nayeli Luis-Vargas**
 <!--Falta varias cosas de control de flujo--->
 
 :::{admonition} Objetivo

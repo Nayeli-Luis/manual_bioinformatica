@@ -1,4 +1,5 @@
 # Introducción a Python
+**Autora: M. Nayeli Luis-Vargas**
 
 :::{admonition} Objetivo
 :class: important

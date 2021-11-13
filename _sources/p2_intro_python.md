@@ -1,11 +1,12 @@
 # Práctica 2. Fundamentos de programación e introducción a Python
+**Autoras: Marisol Navarro y M. Nayeli Luis-Vargas**
 
 :::{admonition} Objetivo
 :class: tip
 * Que el estudiante aplique los conocimientos aprendiendos sobre fundamentos de programación con el lenguaje Python.
 :::
 
-La entrega de ésta práctica es individual y a través del Classroom de la clase 
+La entrega de ésta práctica es individual y a través del Classroom de la clase. 
 
 1.  Escribir un programa que me permita aplicar el 10% de descuento si la compra total es mayor a $100.
 

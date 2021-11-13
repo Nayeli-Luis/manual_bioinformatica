@@ -1,4 +1,5 @@
 # Formatos de archivos
+**Autora: M. Nayeli Luis-Vargas**
 
 A lo largo de el análisis de datos de origen biológico te vas a encontrar con diferentes formatos de los archivos resultantes de la secuenciación de tus muestras o de un proceso bioinformático. Por tanto, es importante que conozcas el tipo de información que guarda los principales formatos con los que te puedes encontrar.
 
@@ -49,8 +50,8 @@ Es una variante del formato FASTA, solo que tiene asociado datos sobre la calida
 
 1. Un encabezado por secuencia que inicia con arroba (@), seguido por el ID de la secuencia y más texto opcional como la descripción. 
 2. La segunda sección contiene la secuencia, generalmente solo utiliza una línea. 
-3. La línea inicia con símbolo más (+) y puede contener texto opcional. 
-4. Contiene los valores de calidad codificados en caracteres ASCII y tiene la misma longitud que la secuencia. Cada caracter representa un número y la codificación puede ser diferente, en general se utiliza el score de calidad Phred.
+3. la tercera línea inicia con símbolo más (+) y puede contener texto opcional. 
+4. LA cuarta contiene los valores de calidad codificados en caracteres <a href = "https://www.ascii-code.com/" >ASCII</a> y tiene la misma longitud que la secuencia. Cada caracter representa un número y la codificación puede ser diferente, en general se utiliza el score de calidad Phred. Para entender en qué consiste el score de calidad Phred puedes leer el anexo de éste manual *Score de calidad Phred*.
 
 De manera que los archivos FASTAQ se pueden ver de la siguiente forma: 
 

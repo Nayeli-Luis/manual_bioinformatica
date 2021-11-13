@@ -1,4 +1,5 @@
 # Git y Github
+**Autora: M. Nayeli Luis-Vargas**
 
 :::{admonition} Objetivo
 :class: tip

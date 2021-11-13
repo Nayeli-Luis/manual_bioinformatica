@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introducción al análisis de datos biológicos con herramientas bioinformáticas. &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -23,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,17 +33,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -90,7 +89,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -112,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -124,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -146,7 +145,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Python
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción al análisis de secuencias de DNA
  </span>
@@ -184,8 +183,13 @@
    Formatos de archivos
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13_workflow_genome.html">
+   Flujo de trabajo para análisis de genomas
+  </a>
+ </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Prácticas
  </span>
@@ -202,7 +206,19 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1_phred.html">
+   Score de calidad Phred
+  </a>
+ </li>
+</ul>
+<p class="caption">
  <span class="caption-text">
   Glosario
  </span>
@@ -270,11 +286,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/solnavss/Genomica_Computacional"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F10_intro_analisis_datos_biol.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2F10_intro_analisis_datos_biol.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -303,30 +319,27 @@
         
               <div>
                 
-  <section id="introduccion-al-analisis-de-datos-biologicos-con-herramientas-bioinformaticas">
+  <div class="section" id="introduccion-al-analisis-de-datos-biologicos-con-herramientas-bioinformaticas">
 <h1>Introducción al análisis de datos biológicos con herramientas bioinformáticas.<a class="headerlink" href="#introduccion-al-analisis-de-datos-biologicos-con-herramientas-bioinformaticas" title="Permalink to this headline">¶</a></h1>
+<p><strong>Autora: M. Nayeli Luis-Vargas</strong></p>
 <p>En general, el análisis de datos en bioinformática aparenta ser sencillo. Tenemos un conjuto de datos, los análizamos con alguna herramienta bioinformática y obtenemos una respuesta.</p>
 <br>
-<figure class="align-default" id="fake">
+<div class="figure align-default" id="fake">
 <a class="reference internal image-reference" href="_images/fake_bioinformatics.png"><img alt="_images/fake_bioinformatics.png" src="_images/fake_bioinformatics.png" style="height: 100px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Como se cree que se llevan a cabo los análisis bioinformáticos.</span><a class="headerlink" href="#fake" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Como se cree que se llevan a cabo los análisis bioinformáticos.</span><a class="headerlink" href="#fake" title="Permalink to this image">¶</a></p>
+</div>
 <br>
 <p>Lo que en realidad sucede es que cuando usamos una herramienta bioinformática, ésta transforma nuestros datos en otros. Y estos datos pueden reanalizarse con otra herramienta y así llegar a respuestas. De maneera que se vuelve más bien un loop de análisis de datos hasta que hallamos los que nos son útiles (como siempre… en función de los objetivos de nuestra investigación).</p>
 <br>
-<figure class="align-default" id="real">
+<div class="figure align-default" id="real">
 <a class="reference internal image-reference" href="_images/real-bioinformatics.png"><img alt="_images/real-bioinformatics.png" src="_images/real-bioinformatics.png" style="height: 350px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Como en realidad se llevan a cabo los análisis bioinformáticos.</span><a class="headerlink" href="#real" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Como en realidad se llevan a cabo los análisis bioinformáticos.</span><a class="headerlink" href="#real" title="Permalink to this image">¶</a></p>
+</div>
 <div class="caution admonition">
 <p class="admonition-title">Nota</p>
 <p>Ésta sección (<em>Introducción al análisis de secuencias de DNA</em>) es un resumen y traducción de una parte del libro <a href = "https://www.biostarhandbook.com/ming-tangs-guide-to-chip-seq-analysis.html"><em>The Biostar Handbook: Bioinformatics Data Analysys Guide</em></a>.</p>
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {

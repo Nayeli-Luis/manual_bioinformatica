@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sintaxis básica &#8212; Genómica computacional. Manual de bioinformática.</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -23,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,17 +33,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-    <script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -90,7 +89,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Bash
  </span>
@@ -112,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Git y GitHub
  </span>
@@ -124,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Fundamentos de programación
  </span>
@@ -146,7 +145,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción a Python
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Introducción al análisis de secuencias de DNA
  </span>
@@ -184,8 +183,13 @@
    Formatos de archivos
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13_workflow_genome.html">
+   Flujo de trabajo para análisis de genomas
+  </a>
+ </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
  <span class="caption-text">
   Prácticas
  </span>
@@ -202,7 +206,19 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p class="caption">
+ <span class="caption-text">
+  Anexos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1_phred.html">
+   Score de calidad Phred
+  </a>
+ </li>
+</ul>
+<p class="caption">
  <span class="caption-text">
   Glosario
  </span>
@@ -270,11 +286,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/solnavss/Genomica_Computacional"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F09_sintaxis_basica.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/solnavss/Genomica_Computacional/issues/new?title=Issue%20on%20page%20%2F09_sintaxis_basica.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -295,7 +311,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/09_sintaxis_basica.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/solnavss/Genomica_Computacional/master?urlpath=tree/docs/09_sintaxis_basica.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -401,9 +417,10 @@
         
               <div>
                 
-  <section id="sintaxis-basica">
+  <div class="section" id="sintaxis-basica">
 <h1>Sintaxis básica<a class="headerlink" href="#sintaxis-basica" title="Permalink to this headline">¶</a></h1>
-<section id="variables">
+<p><strong>Autora: M. Nayeli Luis-Vargas</strong></p>
+<div class="section" id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <p>Reglas para asignar variables:</p>
 <ul class="simple">
@@ -433,10 +450,10 @@
 </div>
 </div>
 </div>
-</section>
-<section id="operadores">
+</div>
+<div class="section" id="operadores">
 <h2>Operadores<a class="headerlink" href="#operadores" title="Permalink to this headline">¶</a></h2>
-<section id="operadores-aritmeticos">
+<div class="section" id="operadores-aritmeticos">
 <h3>Operadores aritméticos<a class="headerlink" href="#operadores-aritmeticos" title="Permalink to this headline">¶</a></h3>
 <table class="colwidths-auto table">
 <thead>
@@ -561,9 +578,9 @@
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="operadores-relacionales">
+</div>
+</div>
+<div class="section" id="operadores-relacionales">
 <h2>Operadores relacionales<a class="headerlink" href="#operadores-relacionales" title="Permalink to this headline">¶</a></h2>
 <p>Recuerda que éste da como resultado un dato booleano o lógico.</p>
 <table class="colwidths-auto table">
@@ -665,8 +682,8 @@
 </div>
 </div>
 </div>
-</section>
-<section id="operadores-logicos">
+</div>
+<div class="section" id="operadores-logicos">
 <h2>Operadores lógicos<a class="headerlink" href="#operadores-logicos" title="Permalink to this headline">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -817,10 +834,10 @@
 </div>
 </div>
 </div>
-</section>
-<section id="algunas-acciones-con-cadenas-de-texto">
+</div>
+<div class="section" id="algunas-acciones-con-cadenas-de-texto">
 <h2>Algunas acciones con cadenas de texto<a class="headerlink" href="#algunas-acciones-con-cadenas-de-texto" title="Permalink to this headline">¶</a></h2>
-<section id="indexado-y-slicing">
+<div class="section" id="indexado-y-slicing">
 <h3>Indexado y slicing<a class="headerlink" href="#indexado-y-slicing" title="Permalink to this headline">¶</a></h3>
 <p>Los objetos en Python (como cadenas de texto, listas, tuplas, etc.) tienen asigando un número, que indica la posición de ese elemento en particular. A partir de éste número de referencia podemos dividir/partir (hacer <em>slicing</em> el objeto en cuestión.</p>
 <br>
@@ -944,11 +961,11 @@ Si deseamos conocer todos los elementos de un objeto, escribiriamos:
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="control-de-flujo">
+</div>
+</div>
+<div class="section" id="control-de-flujo">
 <h2>Control de flujo<a class="headerlink" href="#control-de-flujo" title="Permalink to this headline">¶</a></h2>
-<section id="selectivo-if-elif-else">
+<div class="section" id="selectivo-if-elif-else">
 <h3>Selectivo: <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#selectivo-if-elif-else" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">if</span></code>: si</p></li>
@@ -1027,9 +1044,9 @@ Si deseamos conocer todos los elementos de un objeto, escribiriamos:
 </div>
 <div class="alert alert-warning" role="alert">
 <p>En este caso <code class="docutils literal notranslate"><span class="pre">float()</span></code> es la función integrada que utiliza Python para definir un número como real.</p>
-</div></section>
-</section>
-<section id="funciones-integradas">
+</div></div>
+</div>
+<div class="section" id="funciones-integradas">
 <h2>Funciones integradas<a class="headerlink" href="#funciones-integradas" title="Permalink to this headline">¶</a></h2>
 <p>En inglés son conocidas como <em>Built in Functions</em> y el listado completo puedes verlo aquí: https://docs.python.org/3/library/functions.html. Son funciones que están predeterminadas en Python y puedes ayudarnos a hacer algunas tareas sencillas. Aquí veremos algunos ejemplos.</p>
 <ul class="simple">
@@ -1143,8 +1160,8 @@ Primera letra del abecedario
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
