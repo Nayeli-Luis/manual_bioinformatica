@@ -61,7 +61,7 @@ Si quieres saber de más sitios donde puedes obtener datos de origen biológico 
 
 ## Obtención de secuencias del NCBI
 
-En ésta sección aprenderás a descargar secuencias desde el *National Center for Biotechnology Information* (NCBI): 
+En ésta sección aprenderás a descargar secuencias desde el *National Center for Biotechnology Information* (NCBI). Te sugerimos llevar a cabo el ejercicio, pues las secuencias que descargues las necesitarás para realizar la *Práctica 3*: 
 
 ### Descargar secuencias de DNA
 
@@ -82,7 +82,7 @@ height: 300px
 ---
 ```
 
-*  En seguida te redirigirá a una página con un formato de GeneBank (en el siguiente apartado vemos los formatos). Da clcik en "Send to:" y selecciona las opciones "Complete Record" y "File". Te desplegará un pequeño apartado que dice "Format" primero seleccionaras el que diga `FASTA` y darás click en "Create File". Te descargará un archivo con nombre `sequence.fasta`. Repetirás el proceso para ahroa descargar un archivo con formato `GFF3`, tendrás un segundo archivo con nombre `sequence.GFF3`.
+*  En seguida te redirigirá a una página con un formato de GeneBank (en el siguiente apartado vemos los formatos). Da clcik en "Send to:" y selecciona las opciones "Complete Record" y "File". Te desplegará un pequeño apartado que dice "Format" primero seleccionaras el que diga `FASTA` y darás click en "Create File". Te descargará un archivo con nombre `sequence.fasta`. Repetirás el proceso para ahroa descargar un archivo con formato `GFF3`, tendrás un segundo archivo con nombre `sequence.GFF3`. Renombra los archivos `sequence.fasta -> sarscov2_genome.fasta` y `sequence.gff3 -> sarscov2_genome.gff3`.
 
 ```{figure} images/intro_analisis_bioinfo/ncbi3.png
 ---
@@ -108,7 +108,12 @@ height: 350px
 --- 
 ```
 
-* Descargarás las cadenas A, B y C. Para esto, 1. selecciona la cadena, 2. da click en "Send to:", 3. Selecciona "File", 4. seleccciona en archivo `FASTA` y "default order" y, por último 4. Click en "create file". 
+* Descargarás las cadenas A, B y C. Para esto:
+    1. selecciona la cadena, 
+    2. da click en "Send to:", 
+    3. Selecciona "File", 
+    4. seleccciona en archivo `FASTA` y "default order" y, por último 4. Click en "create file". 
+    5. Renombra los archivos que descargaste, el de la cadena A como `splike_a.faa`, el de la cadena B como `splike_b.faa` y el de la cadena C como `splike_c.faa`
 
 :::{admonition} Atención
 :class: caution

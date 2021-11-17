@@ -205,6 +205,17 @@
    Práctica 2. Fundamentos de programación e introducción a Python
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="p3_bash_ngs.html">
+   Práctica 3. Manejo de datos de secuenciación con
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Bash
+    </span>
+   </code>
+   .
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -408,7 +419,7 @@
 </div>
 <div class="section" id="obtencion-de-secuencias-del-ncbi">
 <h2>Obtención de secuencias del NCBI<a class="headerlink" href="#obtencion-de-secuencias-del-ncbi" title="Permalink to this headline">¶</a></h2>
-<p>En ésta sección aprenderás a descargar secuencias desde el <em>National Center for Biotechnology Information</em> (NCBI):</p>
+<p>En ésta sección aprenderás a descargar secuencias desde el <em>National Center for Biotechnology Information</em> (NCBI). Te sugerimos llevar a cabo el ejercicio, pues las secuencias que descargues las necesitarás para realizar la <em>Práctica 3</em>:</p>
 <div class="section" id="descargar-secuencias-de-dna">
 <h3>Descargar secuencias de DNA<a class="headerlink" href="#descargar-secuencias-de-dna" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -424,7 +435,7 @@
 <a class="reference internal image-reference" href="_images/ncbi2.png"><img alt="_images/ncbi2.png" src="_images/ncbi2.png" style="height: 300px;" /></a>
 </div>
 <ul class="simple">
-<li><p>En seguida te redirigirá a una página con un formato de GeneBank (en el siguiente apartado vemos los formatos). Da clcik en “Send to:” y selecciona las opciones “Complete Record” y “File”. Te desplegará un pequeño apartado que dice “Format” primero seleccionaras el que diga <code class="docutils literal notranslate"><span class="pre">FASTA</span></code> y darás click en “Create File”. Te descargará un archivo con nombre <code class="docutils literal notranslate"><span class="pre">sequence.fasta</span></code>. Repetirás el proceso para ahroa descargar un archivo con formato <code class="docutils literal notranslate"><span class="pre">GFF3</span></code>, tendrás un segundo archivo con nombre <code class="docutils literal notranslate"><span class="pre">sequence.GFF3</span></code>.</p></li>
+<li><p>En seguida te redirigirá a una página con un formato de GeneBank (en el siguiente apartado vemos los formatos). Da clcik en “Send to:” y selecciona las opciones “Complete Record” y “File”. Te desplegará un pequeño apartado que dice “Format” primero seleccionaras el que diga <code class="docutils literal notranslate"><span class="pre">FASTA</span></code> y darás click en “Create File”. Te descargará un archivo con nombre <code class="docutils literal notranslate"><span class="pre">sequence.fasta</span></code>. Repetirás el proceso para ahroa descargar un archivo con formato <code class="docutils literal notranslate"><span class="pre">GFF3</span></code>, tendrás un segundo archivo con nombre <code class="docutils literal notranslate"><span class="pre">sequence.GFF3</span></code>. Renombra los archivos <code class="docutils literal notranslate"><span class="pre">sequence.fasta</span> <span class="pre">-&gt;</span> <span class="pre">sarscov2_genome.fasta</span></code> y <code class="docutils literal notranslate"><span class="pre">sequence.gff3</span> <span class="pre">-&gt;</span> <span class="pre">sarscov2_genome.gff3</span></code>.</p></li>
 </ul>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/ncbi3.png"><img alt="_images/ncbi3.png" src="_images/ncbi3.png" style="height: 350px;" /></a>
@@ -445,7 +456,15 @@
 <a class="reference internal image-reference" href="_images/ncbi5.png"><img alt="_images/ncbi5.png" src="_images/ncbi5.png" style="height: 350px;" /></a>
 </div>
 <ul class="simple">
-<li><p>Descargarás las cadenas A, B y C. Para esto, 1. selecciona la cadena, 2. da click en “Send to:”, 3. Selecciona “File”, 4. seleccciona en archivo <code class="docutils literal notranslate"><span class="pre">FASTA</span></code> y “default order” y, por último 4. Click en “create file”.</p></li>
+<li><p>Descargarás las cadenas A, B y C. Para esto:</p>
+<ol class="simple">
+<li><p>selecciona la cadena,</p></li>
+<li><p>da click en “Send to:”,</p></li>
+<li><p>Selecciona “File”,</p></li>
+<li><p>seleccciona en archivo <code class="docutils literal notranslate"><span class="pre">FASTA</span></code> y “default order” y, por último 4. Click en “create file”.</p></li>
+<li><p>Renombra los archivos que descargaste, el de la cadena A como <code class="docutils literal notranslate"><span class="pre">splike_a.faa</span></code>, el de la cadena B como <code class="docutils literal notranslate"><span class="pre">splike_b.faa</span></code> y el de la cadena C como <code class="docutils literal notranslate"><span class="pre">splike_c.faa</span></code></p></li>
+</ol>
+</li>
 </ul>
 <div class="caution admonition">
 <p class="admonition-title">Atención</p>

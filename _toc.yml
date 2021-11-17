@@ -31,6 +31,7 @@ parts:
     chapters:
     - file: p1_git_github
     - file: p2_intro_python
+    - file: p3_bash_ngs
   - caption: Anexos
     chapters:
     - file: a1_phred 
