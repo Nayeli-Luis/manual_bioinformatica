@@ -205,6 +205,17 @@
    Práctica 2. Fundamentos de programación e introducción a Python
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="p3_bash_ngs.html">
+   Práctica 3. Manejo de datos de secuenciación con
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Bash
+    </span>
+   </code>
+   .
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -419,7 +430,7 @@ GTCTCCGGGGGCTGGGGGAACCAGGGGTTCCCACCAACCACCCTCACTCAGCCTTTTCCCTCCAGGCATCTCTGGGAAAG
 <div class="section" id="gff-gtf">
 <h2>GFF/GTF<a class="headerlink" href="#gff-gtf" title="Permalink to this headline">¶</a></h2>
 <p>Los formatos de <em>General Feature Format</em> (GFF) y <em>General Transfer Format</em> (GTF),
-son archivos que contienen las anotaciones de los genes después de haber llevado a cabo un ensamble, donde cada línea corresponde a un gen o un objeto. En particula, un archivo GTF es idéntico a un archivo GFF versión 2. Estos archivos contienen nueve columnas separadas por tabuladores que arrojan información sobre: el nombre de la secuencia, la fuente de procedencia de la anotación, la característica de gen, los nucleótidos de inicio del gen , los nucleótidos de  fin del gen, el grado de confianza, la hebra de DNA que se transcribe, la fase de anotación de los codones y  una columna con otros atributos del gen.</p>
+son archivos que contienen las anotaciones de los genes después de haber llevado a cabo un ensamble, donde cada línea corresponde a un gen o un objeto. Existen varias versiones de los archivos con formato GFF y en particular, un archivo GTF es idéntico a un archivo GFF versión 2. Estos archivos contienen nueve columnas separadas por tabuladores que arrojan información sobre: el nombre de la secuencia, la fuente de procedencia de la anotación, la característica de gen, los nucleótidos de inicio del gen , los nucleótidos de  fin del gen, el grado de confianza, la hebra de DNA que se transcribe, la fase de anotación de los codones y  una columna con otros atributos del gen.</p>
 <p>Aquí un ejemplo de un archivo con formato GTF:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#gtf-version 2.2
 #!genome-build ASM139977v1
@@ -435,7 +446,7 @@ NZ_CP010822.1 RefSeq  gene  7 1326  . + . gene_id &quot;TO73_RS00005&quot;; tran
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">[source]</span></code></dt><dd><p>Etiqueta que indica la fuente de la cual procede la anotación, puede ser el nombre del programa de predicción o la base de datos.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">[feature]</span></code></dt><dd><p>Característica de la secuencia anotada puede ser: “CDS”, “start_codon”, “stop_codon”.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">[feature]</span></code></dt><dd><p>Característica de la secuencia anotada puede ser: “<a href = "https://www.uniprot.org/help/cds_protein_definition#:~:text=A%20CoDing%20Sequence%20(CDS)%20is,ends%20at%20a%20STOP%20codon.">CDS</a>”, “start_codon”, “stop_codon”, “gene”.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">[start]</span></code> y <code class="docutils literal notranslate"><span class="pre">[end]</span></code></dt><dd><p>Indican los nucleótidos de inicio y final del gen.</p>
 </dd>
@@ -445,9 +456,17 @@ NZ_CP010822.1 RefSeq  gene  7 1326  . + . gene_id &quot;TO73_RS00005&quot;; tran
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">[frame]</span></code></dt><dd><p>Se representa como 0, 1 o 2. 0 indica que el objeto comienza con un codón completo en la base 5’. 1 significa que hay una base extra antes del primer codón completo (la tercera base de un codón anterior) y 2 significa que hay dos bases extra (la segunda y la tercera base de un codón anterior) antes del primer codón completo.</p>
 </dd>
+<dt><code class="docutils literal notranslate"><span class="pre">[attribute]</span></code></dt><dd><p>Una lista separada por punto y coma (;) de otros atributos del gen como un identificador global del gen, un identificador global del transcrito, entre otros.</p>
+</dd>
 </dl>
-<p><code class="docutils literal notranslate"><span class="pre">[attribute]</span></code>
-Una lista separada por punto y coma (;) de otros atributos del gen como un identificador global del gen, un identificador global del transcrito, entre otros.</p>
+<div class="note admonition">
+<p class="admonition-title">Paraq saber más…</p>
+<p>sobre los archivos con formato <code class="docutils literal notranslate"><span class="pre">GFF</span></code> puedes visitar la documentación en la siguientes páginas:</p>
+<ul class="simple">
+<li><p><a href = "http://gmod.org/wiki/GFF2" >GFF versión 2</a></p></li>
+<li><p><a href = "https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md" >GFF versión 3</a></p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="sam-bam">
 <h2>SAM/BAM<a class="headerlink" href="#sam-bam" title="Permalink to this headline">¶</a></h2>

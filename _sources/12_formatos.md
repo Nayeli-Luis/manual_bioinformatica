@@ -66,7 +66,7 @@ GTCTCCGGGGGCTGGGGGAACCAGGGGTTCCCACCAACCACCCTCACTCAGCCTTTTCCCTCCAGGCATCTCTGGGAAAG
 
 ## GFF/GTF
 Los formatos de *General Feature Format* (GFF) y *General Transfer Format* (GTF), 
-son archivos que contienen las anotaciones de los genes después de haber llevado a cabo un ensamble, donde cada línea corresponde a un gen o un objeto. En particula, un archivo GTF es idéntico a un archivo GFF versión 2. Estos archivos contienen nueve columnas separadas por tabuladores que arrojan información sobre: el nombre de la secuencia, la fuente de procedencia de la anotación, la característica de gen, los nucleótidos de inicio del gen , los nucleótidos de  fin del gen, el grado de confianza, la hebra de DNA que se transcribe, la fase de anotación de los codones y  una columna con otros atributos del gen. 
+son archivos que contienen las anotaciones de los genes después de haber llevado a cabo un ensamble, donde cada línea corresponde a un gen o un objeto. Existen varias versiones de los archivos con formato GFF y en particular, un archivo GTF es idéntico a un archivo GFF versión 2. Estos archivos contienen nueve columnas separadas por tabuladores que arrojan información sobre: el nombre de la secuencia, la fuente de procedencia de la anotación, la característica de gen, los nucleótidos de inicio del gen , los nucleótidos de  fin del gen, el grado de confianza, la hebra de DNA que se transcribe, la fase de anotación de los codones y  una columna con otros atributos del gen. 
 
 
 Aquí un ejemplo de un archivo con formato GTF: 
@@ -90,7 +90,7 @@ A continuación se describe cada columna:
 : Etiqueta que indica la fuente de la cual procede la anotación, puede ser el nombre del programa de predicción o la base de datos. 
 
 `[feature]`
-: Característica de la secuencia anotada puede ser: “CDS”, “start_codon”, “stop_codon”.
+: Característica de la secuencia anotada puede ser: “<a href = "https://www.uniprot.org/help/cds_protein_definition#:~:text=A%20CoDing%20Sequence%20(CDS)%20is,ends%20at%20a%20STOP%20codon.">CDS</a>”, “start_codon”, “stop_codon”, "gene".
 
 `[start]` y `[end]`
 : Indican los nucleótidos de inicio y final del gen.
@@ -105,7 +105,16 @@ A continuación se describe cada columna:
 : Se representa como 0, 1 o 2. 0 indica que el objeto comienza con un codón completo en la base 5’. 1 significa que hay una base extra antes del primer codón completo (la tercera base de un codón anterior) y 2 significa que hay dos bases extra (la segunda y la tercera base de un codón anterior) antes del primer codón completo.
 
 `[attribute]`
-Una lista separada por punto y coma (;) de otros atributos del gen como un identificador global del gen, un identificador global del transcrito, entre otros.
+: Una lista separada por punto y coma (;) de otros atributos del gen como un identificador global del gen, un identificador global del transcrito, entre otros.
+
+:::{admonition} Paraq saber más...
+:class: note
+sobre los archivos con formato `GFF` puedes visitar la documentación en la siguientes páginas: 
+
+* <a href = "http://gmod.org/wiki/GFF2" >GFF versión 2</a>
+
+* <a href = "https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md" >GFF versión 3</a>
+:::
 
 
 ## SAM/BAM
